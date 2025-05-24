@@ -20,10 +20,18 @@ namespace ModernFlyouts.UI
 
         public static ToolTip TaskbarIconToolTip { get; private set; }
 
+        private static ElementTheme _currentTheme = ElementTheme.Dark;
+        private static bool _useColoredTrayIcon = true;
+
         #endregion
 
-        public static void SetupTrayIcon()
+        public static void CreateTrayIcon()
         {
+            if (TaskbarIcon != null)
+            {
+                RemoveTrayIcon();
+            }
+            
             var settingsItem = new MenuItem()
             {
                 Header = Properties.Strings.SettingsItem,
@@ -53,15 +61,48 @@ namespace ModernFlyouts.UI
                 ContextMenu = TaskbarIconContextMenu,
                 DoubleClickCommand = CommonCommands.OpenSettingsWindowCommand
             };
+            
+            UpdateTrayIconTheme(_currentTheme, _useColoredTrayIcon);
+        }
+
+        public static void RemoveTrayIcon()
+        {
+            if (TaskbarIcon != null)
+            {
+                TaskbarIcon.Dispose();
+                TaskbarIcon = null;
+            }
+        }
+
+        public static void SetupTrayIcon()
+        {
+            CreateTrayIcon();
         }
 
         public static void UpdateTrayIconVisibility(bool isVisible)
         {
-            TaskbarIcon.Visibility = isVisible ? Visibility.Visible : Visibility.Collapsed;
+            if (isVisible && TaskbarIcon == null)
+            {
+                CreateTrayIcon();
+            }
+            else if (!isVisible && TaskbarIcon != null)
+            {
+                RemoveTrayIcon();
+            }
         }
 
         public static void UpdateTrayIconInternal(ElementTheme currentTheme, bool useColoredTrayIcon)
         {
+            UpdateTrayIconTheme(currentTheme, useColoredTrayIcon);
+        }
+        
+        private static void UpdateTrayIconTheme(ElementTheme currentTheme, bool useColoredTrayIcon)
+        {
+            _currentTheme = currentTheme;
+            _useColoredTrayIcon = useColoredTrayIcon;
+            
+            if (TaskbarIcon == null) return;
+            
             ThemeManager.SetRequestedTheme(TaskbarIconContextMenu, currentTheme);
             ThemeManager.SetRequestedTheme(TaskbarIconToolTip, currentTheme);
 

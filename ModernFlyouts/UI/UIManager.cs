@@ -3,6 +3,7 @@ using ModernFlyouts.Controls;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.Helpers;
 using ModernWpf;
+using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +11,7 @@ using System.Windows.Media;
 
 namespace ModernFlyouts.UI
 {
-    public class UIManager : ObservableObject
+    public class UIManager : ObservableObject, System.IDisposable
     {
         public const double FlyoutWidth = 360;
 
@@ -28,6 +29,31 @@ namespace ModernFlyouts.UI
         private ResourceDictionary darkResources;
 
         private bool _isThemeUpdated;
+        private bool _disposed = false;
+
+        ~UIManager()
+        {
+            Dispose(false);
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            System.GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    SystemTheme.SystemThemeChanged -= OnSystemThemeChanged;
+                    ModernFlyouts.Core.Display.DisplayManager.Instance.DisplayUpdated -= OnDisplayUpdated;
+                }
+                _disposed = true;
+            }
+        }
 
         #region Properties
 
@@ -350,6 +376,14 @@ namespace ModernFlyouts.UI
 
             SystemTheme.SystemThemeChanged += OnSystemThemeChanged;
             SystemTheme.Initialize();
+            
+            ModernFlyouts.Core.Display.DisplayManager.Instance.DisplayUpdated += OnDisplayUpdated;
+        }
+
+        private void OnDisplayUpdated(object sender, EventArgs e)
+        {
+            TrayIconManager.RemoveTrayIcon();
+            TrayIconManager.UpdateTrayIconVisibility(trayIconEnabled);
         }
 
         private void OnFlyoutBackgroundOpacityChanged()
@@ -420,7 +454,10 @@ namespace ModernFlyouts.UI
         {
             if (!_isThemeUpdated) return;
 
-            TrayIconManager.UpdateTrayIconInternal(currentSystemTheme, useColoredTrayIcon);
+            if (trayIconEnabled)
+            {
+                TrayIconManager.UpdateTrayIconInternal(currentSystemTheme, useColoredTrayIcon);
+            }
         }
 
         private void OnMaxVerticalSessionControlsCount()

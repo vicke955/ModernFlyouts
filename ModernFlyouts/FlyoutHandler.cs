@@ -527,6 +527,11 @@ namespace ModernFlyouts
 
         public static void SafelyExitApplication()
         {
+            if (Instance?.UIManager != null)
+            {
+                Instance.UIManager.Dispose();
+            }
+            
             NativeFlyoutHandler.Instance.ShowNativeFlyout();
             Environment.Exit(0);
         }
