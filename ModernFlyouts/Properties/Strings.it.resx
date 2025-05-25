@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -15,6 +120,30 @@
   <data name="About" xml:space="preserve">
     <value>Informazioni</value>
   </data>
+  <data name="About.AppDescription" xml:space="preserve">
+    <value>Questa applicazione è progettata per sostituire i vecchi flyout a tema Metro presenti in Windows con un moderno flyout in Fluent Design.</value>
+  </data>
+  <data name="About.Contributors" xml:space="preserve">
+    <value>Collaboratori</value>
+  </data>
+  <data name="About.Dependencies" xml:space="preserve">
+    <value>Dipendenze</value>
+  </data>
+  <data name="About.FileABug" xml:space="preserve">
+    <value>Se si trovano bug, si prega di aprire un nuovo problema nel repository github.</value>
+  </data>
+  <data name="About.GitHub" xml:space="preserve">
+    <value>Repository GitHub</value>
+  </data>
+  <data name="About.OpenNewIssue" xml:space="preserve">
+    <value>Aprire un nuovo problema</value>
+  </data>
+  <data name="About.RateAndReview" xml:space="preserve">
+    <value>Valuta e rivedi su Microsoft Store</value>
+  </data>
+  <data name="About.Version" xml:space="preserve">
+    <value>Versione: </value>
+  </data>
   <data name="AirplaneMode.NotAvailable" xml:space="preserve">
     <value>La modalità Aereo non è disponibile :(</value>
   </data>
@@ -27,11 +156,56 @@
   <data name="Align" xml:space="preserve">
     <value>Allinea alla posizione predefinita</value>
   </data>
+  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
+    <value>Numero di sessioni da visualizzare</value>
+  </data>
   <data name="AudioFlyoutHelper.NoDevices" xml:space="preserve">
     <value>Nessun dispositivo audio connesso</value>
   </data>
+  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
+    <value>Orientamento del pannello Sessioni multimediali</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
+    <value>Mostra controlli globali di trasporto multimediale di sistema (GSMTC) aka Controlli multimediali nel riquadro a comparsa Volume</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
+    <value>Mostra controllo volume nel riquadro a comparsa GSMTC (Global System Media Transport Controls)</value>
+  </data>
+  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
+    <value>Allineamento delle miniature</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Chiudi</value>
+  </data>
+  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
+    <value>ModernFlyouts</value>
+  </data>
+  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
+    <value>Impostazioni predefinite di Windows</value>
+  </data>
+  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
+    <value>Scuro</value>
+  </data>
+  <data name="Enums.ElementTheme.Light" xml:space="preserve">
+    <value>Chiaro</value>
+  </data>
+  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
+    <value>Orizzontale</value>
+  </data>
+  <data name="Enums.Orientation.Vertical" xml:space="preserve">
+    <value>Verticale</value>
+  </data>
+  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
+    <value>Nascondi automaticamente</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
+    <value>Compresso</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
+    <value>Visibile</value>
   </data>
   <data name="ExitItem" xml:space="preserve">
     <value>Esci</value>
@@ -41,6 +215,12 @@
   </data>
   <data name="GeneralSettings" xml:space="preserve">
     <value>Generale</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
+    <value>BLOC MAIUSC</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
+    <value>Inserisci</value>
   </data>
   <data name="LockKeysFlyoutHelper.InsertMode" xml:space="preserve">
     <value>Modalità inserimento</value>
@@ -53,8 +233,17 @@
     <value>{0} è attivato</value>
     <comment>E.g. Caps lock is on</comment>
   </data>
+  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
+    <value>Blocco NUM</value>
+  </data>
   <data name="LockKeysFlyoutHelper.OvertypeMode" xml:space="preserve">
     <value>Modalità sovrascrittura</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
+    <value>Blocco scorrimento</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
+    <value>Selezionare i tasti per i quale si desidera visualizzare il riquadro a comparsa</value>
   </data>
   <data name="PinTopBar" xml:space="preserve">
     <value>Pin TopBar</value>
@@ -104,6 +293,12 @@
   <data name="Settings.Additional" xml:space="preserve">
     <value>Aggiuntivo</value>
   </data>
+  <data name="Settings.Appearance" xml:space="preserve">
+    <value>Aspetto</value>
+  </data>
+  <data name="Settings.AppTheme" xml:space="preserve">
+    <value>Tema dell'app</value>
+  </data>
   <data name="Settings.Behavior" xml:space="preserve">
     <value>Comportamento</value>
   </data>
@@ -122,138 +317,6 @@
   <data name="Settings.Enabled" xml:space="preserve">
     <value>Abilitato</value>
   </data>
-  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
-    <value>Opacità sfondo riquadro a comparsa</value>
-  </data>
-  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>Posizione predefinita riquadro a comparsa (per il pulsante Allinea)</value>
-  </data>
-  <data name="Settings.FlyoutTopBar" xml:space="preserve">
-    <value>Barra superiore riquadro a comparsa</value>
-  </data>
-  <data name="Settings.Modules" xml:space="preserve">
-    <value>Moduli</value>
-  </data>
-  <data name="Settings.Modules.Airplane" xml:space="preserve">
-    <value>Modulo a comparsa - Mod.Aereo</value>
-  </data>
-  <data name="Settings.Modules.Audio" xml:space="preserve">
-    <value>Modulo a comparsa - Audio</value>
-  </data>
-  <data name="Settings.Modules.Brightness" xml:space="preserve">
-    <value>Modulo a comparsa - Luminosità</value>
-  </data>
-  <data name="Settings.Modules.LockKeys" xml:space="preserve">
-    <value>Modulo a comparsa - Tasti Block</value>
-  </data>
-  <data name="Settings.RunAtStartup" xml:space="preserve">
-    <value>Esegui all'avvio</value>
-  </data>
-  <data name="SettingsItem" xml:space="preserve">
-    <value>impostazioni</value>
-  </data>
-  <data name="SettingsItemDescription" xml:space="preserve">
-    <value>Aprire la finestra delle impostazioni</value>
-  </data>
-  <data name="UnpinTopBar" xml:space="preserve">
-    <value>Rimuovi TopBar</value>
-  </data>
-  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
-    <value>ModernFlyouts</value>
-  </data>
-  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
-    <value>Nessuno</value>
-  </data>
-  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
-    <value>Impostazioni predefinite di Windows</value>
-  </data>
-  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
-    <value>Orizzontale</value>
-  </data>
-  <data name="Enums.Orientation.Vertical" xml:space="preserve">
-    <value>Verticale</value>
-  </data>
-  <data name="About.AppDescription" xml:space="preserve">
-    <value>Questa applicazione è progettata per sostituire i vecchi flyout a tema Metro presenti in Windows con un moderno flyout in Fluent Design.</value>
-  </data>
-  <data name="About.Contributors" xml:space="preserve">
-    <value>Collaboratori</value>
-  </data>
-  <data name="About.GitHub" xml:space="preserve">
-    <value>Repository GitHub</value>
-  </data>
-  <data name="About.OpenNewIssue" xml:space="preserve">
-    <value>Aprire un nuovo problema</value>
-  </data>
-  <data name="About.RateAndReview" xml:space="preserve">
-    <value>Valuta e rivedi su Microsoft Store</value>
-  </data>
-  <data name="About.Version" xml:space="preserve">
-    <value>Versione: </value>
-  </data>
-  <data name="Settings.Language" xml:space="preserve">
-    <value>lingua</value>
-  </data>
-  <data name="Settings.LanguageDescription" xml:space="preserve">
-    <value>Si prega di riavviare l'applicazione per cambiare la lingua correttamente</value>
-  </data>
-  <data name="Settings.SystemDefault" xml:space="preserve">
-    <value>Predefinito del sistema</value>
-  </data>
-  <data name="About.Dependencies" xml:space="preserve">
-    <value>Dipendenze</value>
-  </data>
-  <data name="About.FileABug" xml:space="preserve">
-    <value>Se si trovano bug, si prega di aprire un nuovo problema nel repository github.</value>
-  </data>
-  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
-    <value>Numero di sessioni da visualizzare</value>
-  </data>
-  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
-    <value>Orientamento del pannello Sessioni multimediali</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
-    <value>Mostra controlli globali di trasporto multimediale di sistema (GSMTC) aka Controlli multimediali nel riquadro a comparsa Volume</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
-    <value>Mostra controllo volume nel riquadro a comparsa GSMTC (Global System Media Transport Controls)</value>
-  </data>
-  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
-    <value>Allineamento delle miniature</value>
-  </data>
-  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
-    <value>Scuro</value>
-  </data>
-  <data name="Enums.ElementTheme.Light" xml:space="preserve">
-    <value>Chiaro</value>
-  </data>
-  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
-    <value>Nascondi automaticamente</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
-    <value>Compresso</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
-    <value>Visibile</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
-    <value>BLOC MAIUSC</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
-    <value>Inserisci</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
-    <value>Blocco NUM</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
-    <value>Blocco scorrimento</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
-    <value>Selezionare i tasti per i quale si desidera visualizzare il riquadro a comparsa</value>
-  </data>
-  <data name="Settings.Appearance" xml:space="preserve">
-    <value>Aspetto</value>
-  </data>
   <data name="Settings.EnableModule.Airplane" xml:space="preserve">
     <value>Abilita riquadro a comparsa modalità aereo</value>
   </data>
@@ -266,14 +329,38 @@
   <data name="Settings.EnableModule.LockKeys" xml:space="preserve">
     <value>Abilita tasti di blocco riquadro a comparsa</value>
   </data>
+  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
+    <value>Opacità sfondo riquadro a comparsa</value>
+  </data>
+  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
+    <value>Posizione predefinita riquadro a comparsa (per il pulsante Allinea)</value>
+  </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>Tema riquadro a comparsa</value>
   </data>
   <data name="Settings.FlyoutTimeout" xml:space="preserve">
     <value>Timeout riquadro a comparsa (ms)</value>
   </data>
+  <data name="Settings.FlyoutTopBar" xml:space="preserve">
+    <value>Barra superiore riquadro a comparsa</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>lingua</value>
+  </data>
+  <data name="Settings.LanguageDescription" xml:space="preserve">
+    <value>Si prega di riavviare l'applicazione per cambiare la lingua correttamente</value>
+  </data>
   <data name="Settings.Left" xml:space="preserve">
     <value>A sinistra</value>
+  </data>
+  <data name="Settings.Modules" xml:space="preserve">
+    <value>Moduli</value>
+  </data>
+  <data name="Settings.Modules.Airplane" xml:space="preserve">
+    <value>Modulo a comparsa - Mod.Aereo</value>
+  </data>
+  <data name="Settings.Modules.Audio" xml:space="preserve">
+    <value>Modulo a comparsa - Audio</value>
   </data>
   <data name="Settings.Modules.Audio.Media" xml:space="preserve">
     <value>File multimediali</value>
@@ -281,14 +368,11 @@
   <data name="Settings.Modules.Audio.Volume" xml:space="preserve">
     <value>Anno</value>
   </data>
-  <data name="Settings.Right" xml:space="preserve">
-    <value>A destra</value>
+  <data name="Settings.Modules.Brightness" xml:space="preserve">
+    <value>Modulo a comparsa - Luminosità</value>
   </data>
-  <data name="Settings.TopBarVisibility" xml:space="preserve">
-    <value>Visibilità TopBar</value>
-  </data>
-  <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>Mostra icona nell'area della barra delle applicazioni</value>
+  <data name="Settings.Modules.LockKeys" xml:space="preserve">
+    <value>Modulo a comparsa - Tasti Block</value>
   </data>
   <data name="Settings.Off" xml:space="preserve">
     <value>Disattivato</value>
@@ -296,14 +380,35 @@
   <data name="Settings.On" xml:space="preserve">
     <value>Attivato</value>
   </data>
-  <data name="Settings.AppTheme" xml:space="preserve">
-    <value>Tema dell'app</value>
+  <data name="Settings.ResetToDefaults" xml:space="preserve">
+    <value>Ripristinare le impostazioni predefinite di tutte le impostazioni</value>
+  </data>
+  <data name="Settings.Right" xml:space="preserve">
+    <value>A destra</value>
+  </data>
+  <data name="Settings.RunAtStartup" xml:space="preserve">
+    <value>Esegui all'avvio</value>
+  </data>
+  <data name="Settings.SystemDefault" xml:space="preserve">
+    <value>Predefinito del sistema</value>
+  </data>
+  <data name="Settings.TopBarVisibility" xml:space="preserve">
+    <value>Visibilità TopBar</value>
+  </data>
+  <data name="Settings.TrayIconEnabled" xml:space="preserve">
+    <value>Mostra icona nell'area della barra delle applicazioni</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>Utilizzare l'icona del vassoio colorato</value>
   </data>
-  <data name="Settings.ResetToDefaults" xml:space="preserve">
-    <value>Ripristinare le impostazioni predefinite di tutte le impostazioni</value>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>impostazioni</value>
+  </data>
+  <data name="SettingsItemDescription" xml:space="preserve">
+    <value>Aprire la finestra delle impostazioni</value>
+  </data>
+  <data name="UnpinTopBar" xml:space="preserve">
+    <value>Rimuovi TopBar</value>
   </data>
   <data name="Settings.Personalization" xml:space="preserve">
     <value>Personalizzazione</value>

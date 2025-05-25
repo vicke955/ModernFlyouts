@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -15,6 +120,30 @@
   <data name="About" xml:space="preserve">
     <value>Giới thiệu</value>
   </data>
+  <data name="About.AppDescription" xml:space="preserve">
+    <value>Ứng dụng này được thiết kế để thay thế Fluent Design hiện đại cho các tờ rơi theo chủ đề tàu điện ngầm cũ có trong Windows kể từ Windows 8.</value>
+  </data>
+  <data name="About.Contributors" xml:space="preserve">
+    <value>Người đóng góp</value>
+  </data>
+  <data name="About.Dependencies" xml:space="preserve">
+    <value>Quan hệ phụ thuộc</value>
+  </data>
+  <data name="About.FileABug" xml:space="preserve">
+    <value>Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng mở một vấn đề mới trong kho github.</value>
+  </data>
+  <data name="About.GitHub" xml:space="preserve">
+    <value>Kho lưu trữ GitHub</value>
+  </data>
+  <data name="About.OpenNewIssue" xml:space="preserve">
+    <value>Mở một vấn đề mới</value>
+  </data>
+  <data name="About.RateAndReview" xml:space="preserve">
+    <value>Xếp hạng và Đánh giá trên Microsoft Store</value>
+  </data>
+  <data name="About.Version" xml:space="preserve">
+    <value>Phiên bản: </value>
+  </data>
   <data name="AirplaneMode.NotAvailable" xml:space="preserve">
     <value>Chế độ máy bay không khả :(</value>
   </data>
@@ -27,11 +156,56 @@
   <data name="Align" xml:space="preserve">
     <value>Căn chỉnh theo vị trí mặc định</value>
   </data>
+  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
+    <value>Số phiên để hiển thị</value>
+  </data>
   <data name="AudioFlyoutHelper.NoDevices" xml:space="preserve">
     <value>Không có Thiết bị Âm thanh Được kết nối</value>
   </data>
+  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
+    <value>Hướng bảng điều khiển phiên phương tiện</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
+    <value>Hiển thị Điều khiển Truyền tải Phương tiện Truyền thông Hệ thống Toàn cầu (GSMTC) hay còn gọi là Điều khiển Phương tiện trong phần phát ra Ổ đĩa</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
+    <value>Hiển thị điều khiển âm lượng trong điều khiển truyền thông truyền thông toàn cầu (GSMTC) aka phương tiện truyền thông flyout</value>
+  </data>
+  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
+    <value>Căn chỉnh hình thu nhỏ</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Đóng</value>
+  </data>
+  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
+    <value>ModernFlyouts (Hiện đạiFlyouts)</value>
+  </data>
+  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
+    <value>Không có</value>
+  </data>
+  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
+    <value>Mặc định của Windows</value>
+  </data>
+  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
+    <value>Tối</value>
+  </data>
+  <data name="Enums.ElementTheme.Light" xml:space="preserve">
+    <value>Sáng</value>
+  </data>
+  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
+    <value>Theo chiều ngang</value>
+  </data>
+  <data name="Enums.Orientation.Vertical" xml:space="preserve">
+    <value>Dọc</value>
+  </data>
+  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
+    <value>Tự ẩn</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
+    <value>Đã thu gọn</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
+    <value>Hiển thị</value>
   </data>
   <data name="ExitItem" xml:space="preserve">
     <value>Thoát</value>
@@ -41,6 +215,12 @@
   </data>
   <data name="GeneralSettings" xml:space="preserve">
     <value>Chung</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
+    <value>Caps lock</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
+    <value>Chèn</value>
   </data>
   <data name="LockKeysFlyoutHelper.InsertMode" xml:space="preserve">
     <value>Chế độ Chèn</value>
@@ -53,8 +233,17 @@
     <value>{0} đang bật</value>
     <comment>E.g. Caps lock is on</comment>
   </data>
+  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
+    <value>Khóa Num</value>
+  </data>
   <data name="LockKeysFlyoutHelper.OvertypeMode" xml:space="preserve">
     <value>Chế độ ghi công</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
+    <value>Khóa cuộn</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
+    <value>Chọn các phím bạn muốn hiển thị hộp chú thích cho</value>
   </data>
   <data name="PinTopBar" xml:space="preserve">
     <value>Ghim Thanh Trên cùng</value>
@@ -104,6 +293,12 @@
   <data name="Settings.Additional" xml:space="preserve">
     <value>Bổ sung</value>
   </data>
+  <data name="Settings.Appearance" xml:space="preserve">
+    <value>Diện mạo</value>
+  </data>
+  <data name="Settings.AppTheme" xml:space="preserve">
+    <value>Chủ đề Ứng dụng</value>
+  </data>
   <data name="Settings.Behavior" xml:space="preserve">
     <value>Hành vi</value>
   </data>
@@ -122,138 +317,6 @@
   <data name="Settings.Enabled" xml:space="preserve">
     <value>Đã bật</value>
   </data>
-  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
-    <value>Độ mờ nền bay ra</value>
-  </data>
-  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>Vị trí Mặc định Của Flyout (đối với nút Căn chỉnh)</value>
-  </data>
-  <data name="Settings.FlyoutTopBar" xml:space="preserve">
-    <value>Thanh trên cùng bay ra</value>
-  </data>
-  <data name="Settings.Modules" xml:space="preserve">
-    <value>Mô đun</value>
-  </data>
-  <data name="Settings.Modules.Airplane" xml:space="preserve">
-    <value>Mô-đun máy bayMode-flyout</value>
-  </data>
-  <data name="Settings.Modules.Audio" xml:space="preserve">
-    <value>Mô-đun phát âm thanh</value>
-  </data>
-  <data name="Settings.Modules.Brightness" xml:space="preserve">
-    <value>Mô-đun độ sáng-flyout</value>
-  </data>
-  <data name="Settings.Modules.LockKeys" xml:space="preserve">
-    <value>Mô-đun khóa-flyout</value>
-  </data>
-  <data name="Settings.RunAtStartup" xml:space="preserve">
-    <value>Chạy khi khởi động</value>
-  </data>
-  <data name="SettingsItem" xml:space="preserve">
-    <value>Cài đặt</value>
-  </data>
-  <data name="SettingsItemDescription" xml:space="preserve">
-    <value>Mở cửa sổ thiết đặt</value>
-  </data>
-  <data name="UnpinTopBar" xml:space="preserve">
-    <value>Bỏ ghim Thanh Trên cùng</value>
-  </data>
-  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
-    <value>ModernFlyouts (Hiện đạiFlyouts)</value>
-  </data>
-  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
-    <value>Không có</value>
-  </data>
-  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
-    <value>Mặc định của Windows</value>
-  </data>
-  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
-    <value>Theo chiều ngang</value>
-  </data>
-  <data name="Enums.Orientation.Vertical" xml:space="preserve">
-    <value>Dọc</value>
-  </data>
-  <data name="About.AppDescription" xml:space="preserve">
-    <value>Ứng dụng này được thiết kế để thay thế Fluent Design hiện đại cho các tờ rơi theo chủ đề tàu điện ngầm cũ có trong Windows kể từ Windows 8.</value>
-  </data>
-  <data name="About.Contributors" xml:space="preserve">
-    <value>Người đóng góp</value>
-  </data>
-  <data name="About.GitHub" xml:space="preserve">
-    <value>Kho lưu trữ GitHub</value>
-  </data>
-  <data name="About.OpenNewIssue" xml:space="preserve">
-    <value>Mở một vấn đề mới</value>
-  </data>
-  <data name="About.RateAndReview" xml:space="preserve">
-    <value>Xếp hạng và Đánh giá trên Microsoft Store</value>
-  </data>
-  <data name="About.Version" xml:space="preserve">
-    <value>Phiên bản: </value>
-  </data>
-  <data name="Settings.Language" xml:space="preserve">
-    <value>Ngôn ngữ</value>
-  </data>
-  <data name="Settings.LanguageDescription" xml:space="preserve">
-    <value>Vui lòng khởi động lại ứng dụng để thay đổi ngôn ngữ đúng cách</value>
-  </data>
-  <data name="Settings.SystemDefault" xml:space="preserve">
-    <value>Mặc định hệ thống</value>
-  </data>
-  <data name="About.Dependencies" xml:space="preserve">
-    <value>Quan hệ phụ thuộc</value>
-  </data>
-  <data name="About.FileABug" xml:space="preserve">
-    <value>Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng mở một vấn đề mới trong kho github.</value>
-  </data>
-  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
-    <value>Số phiên để hiển thị</value>
-  </data>
-  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
-    <value>Hướng bảng điều khiển phiên phương tiện</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
-    <value>Hiển thị Điều khiển Truyền tải Phương tiện Truyền thông Hệ thống Toàn cầu (GSMTC) hay còn gọi là Điều khiển Phương tiện trong phần phát ra Ổ đĩa</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
-    <value>Hiển thị điều khiển âm lượng trong điều khiển truyền thông truyền thông toàn cầu (GSMTC) aka phương tiện truyền thông flyout</value>
-  </data>
-  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
-    <value>Căn chỉnh hình thu nhỏ</value>
-  </data>
-  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
-    <value>Tối</value>
-  </data>
-  <data name="Enums.ElementTheme.Light" xml:space="preserve">
-    <value>Sáng</value>
-  </data>
-  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
-    <value>Tự ẩn</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
-    <value>Đã thu gọn</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
-    <value>Hiển thị</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
-    <value>Caps lock</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
-    <value>Chèn</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
-    <value>Khóa Num</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
-    <value>Khóa cuộn</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
-    <value>Chọn các phím bạn muốn hiển thị hộp chú thích cho</value>
-  </data>
-  <data name="Settings.Appearance" xml:space="preserve">
-    <value>Diện mạo</value>
-  </data>
   <data name="Settings.EnableModule.Airplane" xml:space="preserve">
     <value>Bật Chế độ máy bay Flyout</value>
   </data>
@@ -266,14 +329,38 @@
   <data name="Settings.EnableModule.LockKeys" xml:space="preserve">
     <value>Bật Khóa phím Flyout</value>
   </data>
+  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
+    <value>Độ mờ nền bay ra</value>
+  </data>
+  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
+    <value>Vị trí Mặc định Của Flyout (đối với nút Căn chỉnh)</value>
+  </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>Chủ đề Bay ra</value>
   </data>
   <data name="Settings.FlyoutTimeout" xml:space="preserve">
     <value>Thời gian chờ bay ra (ms)</value>
   </data>
+  <data name="Settings.FlyoutTopBar" xml:space="preserve">
+    <value>Thanh trên cùng bay ra</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="Settings.LanguageDescription" xml:space="preserve">
+    <value>Vui lòng khởi động lại ứng dụng để thay đổi ngôn ngữ đúng cách</value>
+  </data>
   <data name="Settings.Left" xml:space="preserve">
     <value>Trái</value>
+  </data>
+  <data name="Settings.Modules" xml:space="preserve">
+    <value>Mô đun</value>
+  </data>
+  <data name="Settings.Modules.Airplane" xml:space="preserve">
+    <value>Mô-đun máy bayMode-flyout</value>
+  </data>
+  <data name="Settings.Modules.Audio" xml:space="preserve">
+    <value>Mô-đun phát âm thanh</value>
   </data>
   <data name="Settings.Modules.Audio.Media" xml:space="preserve">
     <value>Phương tiện</value>
@@ -281,14 +368,11 @@
   <data name="Settings.Modules.Audio.Volume" xml:space="preserve">
     <value>Âm lượng</value>
   </data>
-  <data name="Settings.Right" xml:space="preserve">
-    <value>Phải</value>
+  <data name="Settings.Modules.Brightness" xml:space="preserve">
+    <value>Mô-đun độ sáng-flyout</value>
   </data>
-  <data name="Settings.TopBarVisibility" xml:space="preserve">
-    <value>Khả năng hiển thị Thanh Trên cùng</value>
-  </data>
-  <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>Hiện biểu tượng trên vùng khay hệ thống</value>
+  <data name="Settings.Modules.LockKeys" xml:space="preserve">
+    <value>Mô-đun khóa-flyout</value>
   </data>
   <data name="Settings.Off" xml:space="preserve">
     <value>Tắt</value>
@@ -296,14 +380,35 @@
   <data name="Settings.On" xml:space="preserve">
     <value>Bật</value>
   </data>
-  <data name="Settings.AppTheme" xml:space="preserve">
-    <value>Chủ đề Ứng dụng</value>
+  <data name="Settings.ResetToDefaults" xml:space="preserve">
+    <value>Đặt lại tất cả các thiết đặt về mặc định</value>
+  </data>
+  <data name="Settings.Right" xml:space="preserve">
+    <value>Phải</value>
+  </data>
+  <data name="Settings.RunAtStartup" xml:space="preserve">
+    <value>Chạy khi khởi động</value>
+  </data>
+  <data name="Settings.SystemDefault" xml:space="preserve">
+    <value>Mặc định hệ thống</value>
+  </data>
+  <data name="Settings.TopBarVisibility" xml:space="preserve">
+    <value>Khả năng hiển thị Thanh Trên cùng</value>
+  </data>
+  <data name="Settings.TrayIconEnabled" xml:space="preserve">
+    <value>Hiện biểu tượng trên vùng khay hệ thống</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>Biểu tượng Sử dụng khay màu</value>
   </data>
-  <data name="Settings.ResetToDefaults" xml:space="preserve">
-    <value>Đặt lại tất cả các thiết đặt về mặc định</value>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="SettingsItemDescription" xml:space="preserve">
+    <value>Mở cửa sổ thiết đặt</value>
+  </data>
+  <data name="UnpinTopBar" xml:space="preserve">
+    <value>Bỏ ghim Thanh Trên cùng</value>
   </data>
   <data name="Settings.Personalization" xml:space="preserve">
     <value>Cá nhân hoá</value>

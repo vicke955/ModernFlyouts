@@ -54,15 +54,15 @@
                     </ToggleButton>
                 </Grid>
             </Border>
-            <ui:SimpleStackPanel Spacing="10">
+            <ui:SimpleStackPanel Spacing="5">
                 <ComboBox x:Name="CmbHorizontal" x:FieldModifier="private"
                           ui:ControlHelper.Header="{x:Static resx:Strings.Settings_HorizontalAlignment}"
                           ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
-                          Width="240" />
+                          Width="140" />
                 <ComboBox x:Name="CmbVertical" x:FieldModifier="private"
                           ui:ControlHelper.Header="{x:Static resx:Strings.Settings_VerticalAlignment}"
                           ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
-                          Width="240" />
+                          Width="140" />
             </ui:SimpleStackPanel>
         </toolkitControls:SimpleWrapPanel>
     </Grid>

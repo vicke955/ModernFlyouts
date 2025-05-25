@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -15,6 +120,30 @@
   <data name="About" xml:space="preserve">
     <value>关于</value>
   </data>
+  <data name="About.AppDescription" xml:space="preserve">
+    <value>该程序用于将旧的 Windows 8 Metro 风格浮出控件覆盖为 Fluent Design 风格浮出控件。</value>
+  </data>
+  <data name="About.Contributors" xml:space="preserve">
+    <value>贡献者</value>
+  </data>
+  <data name="About.Dependencies" xml:space="preserve">
+    <value>依赖项</value>
+  </data>
+  <data name="About.FileABug" xml:space="preserve">
+    <value>如果发现任何 bug，请在 GitHub 仓库中创建一个新 Issue。</value>
+  </data>
+  <data name="About.GitHub" xml:space="preserve">
+    <value>GitHub 仓库</value>
+  </data>
+  <data name="About.OpenNewIssue" xml:space="preserve">
+    <value>创建新 Issue</value>
+  </data>
+  <data name="About.RateAndReview" xml:space="preserve">
+    <value>去 Microsoft Store 评分并发送评价</value>
+  </data>
+  <data name="About.Version" xml:space="preserve">
+    <value>版本：</value>
+  </data>
   <data name="AirplaneMode.NotAvailable" xml:space="preserve">
     <value>设备不支持飞行模式 :(</value>
   </data>
@@ -27,11 +156,56 @@
   <data name="Align" xml:space="preserve">
     <value>移动到默认位置</value>
   </data>
+  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
+    <value>显示的会话数</value>
+  </data>
   <data name="AudioFlyoutHelper.NoDevices" xml:space="preserve">
     <value>没有已连接的音频设备</value>
   </data>
+  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
+    <value>媒体面板方向</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
+    <value>在音量浮出控件中显示系统全局媒体传输 / 媒体控制</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
+    <value>在媒体浮出控件中显示音量控制</value>
+  </data>
+  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
+    <value>缩略图对齐方向</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
+  </data>
+  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
+    <value>ModernFlyouts</value>
+  </data>
+  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
+    <value>Windows 默认</value>
+  </data>
+  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Enums.ElementTheme.Light" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
+    <value>水平</value>
+  </data>
+  <data name="Enums.Orientation.Vertical" xml:space="preserve">
+    <value>垂直</value>
+  </data>
+  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
+    <value>自动隐藏</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
+    <value>可见</value>
   </data>
   <data name="ExitItem" xml:space="preserve">
     <value>退出</value>
@@ -41,6 +215,12 @@
   </data>
   <data name="GeneralSettings" xml:space="preserve">
     <value>常规</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
+    <value>大写锁定</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
+    <value>插入</value>
   </data>
   <data name="LockKeysFlyoutHelper.InsertMode" xml:space="preserve">
     <value>插入模式</value>
@@ -53,8 +233,17 @@
     <value>{0} 已打开</value>
     <comment>E.g. Caps lock is on</comment>
   </data>
+  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
+    <value>数字锁定</value>
+  </data>
   <data name="LockKeysFlyoutHelper.OvertypeMode" xml:space="preserve">
     <value>覆写模式</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
+    <value>滚动锁定</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
+    <value>选择要显示的浮出控件</value>
   </data>
   <data name="PinTopBar" xml:space="preserve">
     <value>固定顶栏</value>
@@ -104,6 +293,12 @@
   <data name="Settings.Additional" xml:space="preserve">
     <value>附加项</value>
   </data>
+  <data name="Settings.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Settings.AppTheme" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
   <data name="Settings.Behavior" xml:space="preserve">
     <value>行为</value>
   </data>
@@ -122,138 +317,6 @@
   <data name="Settings.Enabled" xml:space="preserve">
     <value>已启用</value>
   </data>
-  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
-    <value>浮出控件背景不透明度</value>
-  </data>
-  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>浮出控件默认位置（用于恢复默认位置按钮）</value>
-  </data>
-  <data name="Settings.FlyoutTopBar" xml:space="preserve">
-    <value>浮出控件顶栏</value>
-  </data>
-  <data name="Settings.Modules" xml:space="preserve">
-    <value>浮出控件模块</value>
-  </data>
-  <data name="Settings.Modules.Airplane" xml:space="preserve">
-    <value>飞行模式浮出控件模块</value>
-  </data>
-  <data name="Settings.Modules.Audio" xml:space="preserve">
-    <value>音频浮出控件模块</value>
-  </data>
-  <data name="Settings.Modules.Brightness" xml:space="preserve">
-    <value>亮度浮出控件模块</value>
-  </data>
-  <data name="Settings.Modules.LockKeys" xml:space="preserve">
-    <value>锁定键浮出控件模块</value>
-  </data>
-  <data name="Settings.RunAtStartup" xml:space="preserve">
-    <value>开机时运行</value>
-  </data>
-  <data name="SettingsItem" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="SettingsItemDescription" xml:space="preserve">
-    <value>打开设置窗口</value>
-  </data>
-  <data name="UnpinTopBar" xml:space="preserve">
-    <value>取消固定顶栏</value>
-  </data>
-  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
-    <value>ModernFlyouts</value>
-  </data>
-  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
-    <value>无</value>
-  </data>
-  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
-    <value>Windows 默认</value>
-  </data>
-  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
-    <value>水平</value>
-  </data>
-  <data name="Enums.Orientation.Vertical" xml:space="preserve">
-    <value>垂直</value>
-  </data>
-  <data name="About.AppDescription" xml:space="preserve">
-    <value>该程序用于将旧的 Windows 8 Metro 风格浮出控件覆盖为 Fluent Design 风格浮出控件。</value>
-  </data>
-  <data name="About.Contributors" xml:space="preserve">
-    <value>贡献者</value>
-  </data>
-  <data name="About.GitHub" xml:space="preserve">
-    <value>GitHub 仓库</value>
-  </data>
-  <data name="About.OpenNewIssue" xml:space="preserve">
-    <value>创建新 Issue</value>
-  </data>
-  <data name="About.RateAndReview" xml:space="preserve">
-    <value>去 Microsoft Store 评分并发送评价</value>
-  </data>
-  <data name="About.Version" xml:space="preserve">
-    <value>版本：</value>
-  </data>
-  <data name="Settings.Language" xml:space="preserve">
-    <value>语言</value>
-  </data>
-  <data name="Settings.LanguageDescription" xml:space="preserve">
-    <value>请重新启动应用程序，以便完整更改语言</value>
-  </data>
-  <data name="Settings.SystemDefault" xml:space="preserve">
-    <value>系统默认</value>
-  </data>
-  <data name="About.Dependencies" xml:space="preserve">
-    <value>依赖项</value>
-  </data>
-  <data name="About.FileABug" xml:space="preserve">
-    <value>如果发现任何 bug，请在 GitHub 仓库中创建一个新 Issue。</value>
-  </data>
-  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
-    <value>显示的会话数</value>
-  </data>
-  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
-    <value>媒体面板方向</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
-    <value>在音量浮出控件中显示系统全局媒体传输 / 媒体控制</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
-    <value>在媒体浮出控件中显示音量控制</value>
-  </data>
-  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
-    <value>缩略图对齐方向</value>
-  </data>
-  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
-    <value>深色</value>
-  </data>
-  <data name="Enums.ElementTheme.Light" xml:space="preserve">
-    <value>浅色</value>
-  </data>
-  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
-    <value>自动隐藏</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
-    <value>折叠</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
-    <value>可见</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
-    <value>大写锁定</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
-    <value>插入</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
-    <value>数字锁定</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
-    <value>滚动锁定</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
-    <value>选择要显示的浮出控件</value>
-  </data>
-  <data name="Settings.Appearance" xml:space="preserve">
-    <value>外观</value>
-  </data>
   <data name="Settings.EnableModule.Airplane" xml:space="preserve">
     <value>启用飞行模式浮出控件</value>
   </data>
@@ -266,14 +329,38 @@
   <data name="Settings.EnableModule.LockKeys" xml:space="preserve">
     <value>启用锁定键浮出控件</value>
   </data>
+  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
+    <value>浮出控件背景不透明度</value>
+  </data>
+  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
+    <value>浮出控件默认位置（用于恢复默认位置按钮）</value>
+  </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>浮出控件主题</value>
   </data>
   <data name="Settings.FlyoutTimeout" xml:space="preserve">
     <value>浮出控件超时（毫秒 / ms）</value>
   </data>
+  <data name="Settings.FlyoutTopBar" xml:space="preserve">
+    <value>浮出控件顶栏</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Settings.LanguageDescription" xml:space="preserve">
+    <value>请重新启动应用程序，以便完整更改语言</value>
+  </data>
   <data name="Settings.Left" xml:space="preserve">
     <value>左侧</value>
+  </data>
+  <data name="Settings.Modules" xml:space="preserve">
+    <value>浮出控件模块</value>
+  </data>
+  <data name="Settings.Modules.Airplane" xml:space="preserve">
+    <value>飞行模式浮出控件模块</value>
+  </data>
+  <data name="Settings.Modules.Audio" xml:space="preserve">
+    <value>音频浮出控件模块</value>
   </data>
   <data name="Settings.Modules.Audio.Media" xml:space="preserve">
     <value>媒体</value>
@@ -281,14 +368,11 @@
   <data name="Settings.Modules.Audio.Volume" xml:space="preserve">
     <value>音量</value>
   </data>
-  <data name="Settings.Right" xml:space="preserve">
-    <value>右侧</value>
+  <data name="Settings.Modules.Brightness" xml:space="preserve">
+    <value>亮度浮出控件模块</value>
   </data>
-  <data name="Settings.TopBarVisibility" xml:space="preserve">
-    <value>顶栏可见性</value>
-  </data>
-  <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>在系统托盘显示图标</value>
+  <data name="Settings.Modules.LockKeys" xml:space="preserve">
+    <value>锁定键浮出控件模块</value>
   </data>
   <data name="Settings.Off" xml:space="preserve">
     <value>关闭</value>
@@ -296,14 +380,38 @@
   <data name="Settings.On" xml:space="preserve">
     <value>打开</value>
   </data>
-  <data name="Settings.AppTheme" xml:space="preserve">
-    <value>应用主题</value>
+  <data name="Settings.ResetToDefaults" xml:space="preserve">
+    <value>将所有设置重置为默认值</value>
+  </data>
+  <data name="Settings.Right" xml:space="preserve">
+    <value>右侧</value>
+  </data>
+  <data name="Settings.RunAtStartup" xml:space="preserve">
+    <value>开机时运行</value>
+  </data>
+  <data name="Settings.SystemDefault" xml:space="preserve">
+    <value>系统默认</value>
+  </data>
+  <data name="Settings.TopBarVisibility" xml:space="preserve">
+    <value>顶栏可见性</value>
+  </data>
+  <data name="Settings.TrayIconEnabled" xml:space="preserve">
+    <value>在系统托盘显示图标</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>使用彩色托盘图标</value>
   </data>
-  <data name="Settings.ResetToDefaults" xml:space="preserve">
-    <value>将所有设置重置为默认值</value>
+  <data name="Settings.FlyoutAnimationEnabled" xml:space="preserve">
+    <value>淡出动画</value>
+  </data>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsItemDescription" xml:space="preserve">
+    <value>打开设置窗口</value>
+  </data>
+  <data name="UnpinTopBar" xml:space="preserve">
+    <value>取消固定顶栏</value>
   </data>
   <data name="Settings.Personalization" xml:space="preserve">
     <value>个性化</value>
@@ -359,6 +467,24 @@
   <data name="Settings.Display" xml:space="preserve">
     <value>显示</value>
   </data>
+  <data name="Settings.DisplayDescription" xml:space="preserve">
+    <value>选择显示浮出控件的显示器</value>
+  </data>
+  <data name="Settings.FlyoutAlignment" xml:space="preserve">
+    <value>浮出控件对齐方式</value>
+  </data>
+  <data name="Settings.FlyoutContentStackingDirection" xml:space="preserve">
+    <value>浮出控件内容堆叠方向</value>
+  </data>
+  <data name="Settings.FlyoutExpandDirection" xml:space="preserve">
+    <value>浮出控件展开方向</value>
+  </data>
+  <data name="Settings.FlyoutPlacement" xml:space="preserve">
+    <value>展现模式</value>
+  </data>
+  <data name="Settings.FlyoutPlacementMode" xml:space="preserve">
+    <value>对齐方式</value>
+  </data>
   <data name="Settings.HorizontalAlignment" xml:space="preserve">
     <value>水平对齐</value>
   </data>
@@ -367,5 +493,8 @@
   </data>
   <data name="Settings.VerticalAlignment" xml:space="preserve">
     <value>垂直对齐</value>
+  </data>
+  <data name="AudioFlyoutHelper.UseThumbnailAsBackground" xml:space="preserve">
+    <value>使用媒体的缩略图作为控件的背景</value>
   </data>
 </root>

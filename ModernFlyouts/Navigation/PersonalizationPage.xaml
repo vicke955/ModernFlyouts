@@ -38,20 +38,19 @@
                             <Run Text="{Binding Path=UIManager.FlyoutBackgroundOpacity, StringFormat={}{0:#0}%}" />
                         </TextBlock>
                     </ui:SimpleStackPanel>
-                    <ui:ToggleSwitch Header="{x:Static resx:Strings.Settings_TrayIconEnabled}"
+                    <ui:ToggleSwitch Header=""
                                      IsOn="{Binding UIManager.TrayIconEnabled}"
-                                     OnContent="{x:Static resx:Strings.Settings_On}"
-                                     OffContent="{x:Static resx:Strings.Settings_Off}" />
-                    <ui:ToggleSwitch Header="{x:Static resx:Strings.Settings_UseColoredTrayIcon}"
+                                     OnContent="{x:Static resx:Strings.Settings_TrayIconEnabled}"
+                                     OffContent="{x:Static resx:Strings.Settings_TrayIconEnabled}" />
+                    <ui:ToggleSwitch Header=""
                                      IsOn="{Binding UIManager.UseColoredTrayIcon}"
-                                     OnContent="{x:Static resx:Strings.Settings_On}"
-                                     OffContent="{x:Static resx:Strings.Settings_Off}"
-                                     Visibility="{Binding UIManager.TrayIconEnabled,
-                                        Converter={StaticResource BooleanToVisibilityConverter}}" />
-                    <ui:ToggleSwitch Header="{x:Static resx:Strings.Settings_FlyoutAnimationEnabled}"
+                                     OnContent="{x:Static resx:Strings.Settings_UseColoredTrayIcon}"
+                                     OffContent="{x:Static resx:Strings.Settings_UseColoredTrayIcon}"
+                                     IsEnabled="{Binding UIManager.TrayIconEnabled}" />
+                    <ui:ToggleSwitch Header=""
                                      IsOn="{Binding UIManager.FlyoutAnimationEnabled}"
-                                     OnContent="{x:Static resx:Strings.Settings_On}"
-                                     OffContent="{x:Static resx:Strings.Settings_Off}" />
+                                     OnContent="{x:Static resx:Strings.Settings_FlyoutAnimationEnabled}"
+                                     OffContent="{x:Static resx:Strings.Settings_FlyoutAnimationEnabled}" />
                 </ui:SimpleStackPanel>
             </GroupBox>
 
@@ -59,11 +58,11 @@
                 <ui:SimpleStackPanel Spacing="10">
                     <ui:NumberBox Header="{x:Static resx:Strings.Settings_FlyoutTimeout}"
                                   HorizontalAlignment="Left" Minimum="100"
-                                  SmallChange="50" LargeChange="100" MinWidth="240"
+                                  SmallChange="50" LargeChange="100" MinWidth="170"
                                   SpinButtonPlacementMode="Inline" Value="{Binding UIManager.FlyoutTimeout}">
                         <ui:NumberBox.Description>
                             <ui:SimpleStackPanel Margin="0,5,0,0" Orientation="Horizontal" Spacing="5">
-                                <Viewbox Height="16">
+                                <Viewbox Height="12">
                                     <Border>
                                         <ui:SymbolIcon Symbol="SolidStar" />
                                     </Border>

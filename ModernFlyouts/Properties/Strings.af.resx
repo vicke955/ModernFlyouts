@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -15,6 +120,30 @@
   <data name="About" xml:space="preserve">
     <value>Inligting oor</value>
   </data>
+  <data name="About.AppDescription" xml:space="preserve">
+    <value>Hierdie inligting is ontwerp om 'n moderne Vlot Ontwerp vervanging vir die ou metro tema flyouts teenwoordig in Windows sedert Windows wees sedert Windows 8.</value>
+  </data>
+  <data name="About.Contributors" xml:space="preserve">
+    <value>Medewerkers</value>
+  </data>
+  <data name="About.Dependencies" xml:space="preserve">
+    <value>Afhanklikes</value>
+  </data>
+  <data name="About.FileABug" xml:space="preserve">
+    <value>As jy enige foute vind, maak asseblief 'n nuwe probleem in die repository oop.</value>
+  </data>
+  <data name="About.GitHub" xml:space="preserve">
+    <value>Hierdie artikel is 'n weesbladsy.</value>
+  </data>
+  <data name="About.OpenNewIssue" xml:space="preserve">
+    <value>Maak 'n nuwe kwessie oop</value>
+  </data>
+  <data name="About.RateAndReview" xml:space="preserve">
+    <value>Tarief en resensie op Microsoft-Winkel</value>
+  </data>
+  <data name="About.Version" xml:space="preserve">
+    <value>Weergawe: </value>
+  </data>
   <data name="AirplaneMode.NotAvailable" xml:space="preserve">
     <value>Vliegtuigmodus is nie beskikbaar :(</value>
   </data>
@@ -27,11 +156,56 @@
   <data name="Align" xml:space="preserve">
     <value>Rig na verstekposisie</value>
   </data>
+  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
+    <value>Aantal sessies om te wys</value>
+  </data>
   <data name="AudioFlyoutHelper.NoDevices" xml:space="preserve">
     <value>Geen gekoppelde oudiotoestelle nie</value>
   </data>
+  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
+    <value>Mediasessies paneel oriëntasie</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
+    <value>Wys Global System Media Vervoerkontroles (GSMTC) aka Media-kontroles in volumevliegout</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
+    <value>Wys volumebeheer in Global System Media Transport Controls (GSMTC)</value>
+  </data>
+  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
+    <value>Posseëlprendige belyning</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Sluit</value>
+  </data>
+  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
+    <value>ModernFlyouts</value>
+  </data>
+  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
+    <value>Windows-verstek</value>
+  </data>
+  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
+    <value>Donker</value>
+  </data>
+  <data name="Enums.ElementTheme.Light" xml:space="preserve">
+    <value>Lig</value>
+  </data>
+  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
+    <value>Horisontale</value>
+  </data>
+  <data name="Enums.Orientation.Vertical" xml:space="preserve">
+    <value>Vertikaal</value>
+  </data>
+  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
+    <value>Outoverskuil</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
+    <value>Ingevou</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
+    <value>Sigbaar</value>
   </data>
   <data name="ExitItem" xml:space="preserve">
     <value>Verlaat</value>
@@ -41,6 +215,12 @@
   </data>
   <data name="GeneralSettings" xml:space="preserve">
     <value>Algemeen</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
+    <value>Hoofletters</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
+    <value>Voeg in</value>
   </data>
   <data name="LockKeysFlyoutHelper.InsertMode" xml:space="preserve">
     <value>Voeg modus in</value>
@@ -53,8 +233,17 @@
     <value>{0} is op</value>
     <comment>E.g. Caps lock is on</comment>
   </data>
+  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
+    <value>Num slot</value>
+  </data>
   <data name="LockKeysFlyoutHelper.OvertypeMode" xml:space="preserve">
     <value>Oortipe modus</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
+    <value>Rol slot</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
+    <value>Kies die sleutels waarna jy die vlieguitleg wil wys</value>
   </data>
   <data name="PinTopBar" xml:space="preserve">
     <value>Speld TopBar vas</value>
@@ -104,6 +293,12 @@
   <data name="Settings.Additional" xml:space="preserve">
     <value>Bykomende</value>
   </data>
+  <data name="Settings.Appearance" xml:space="preserve">
+    <value>Voorkoms</value>
+  </data>
+  <data name="Settings.AppTheme" xml:space="preserve">
+    <value>Programtema</value>
+  </data>
   <data name="Settings.Behavior" xml:space="preserve">
     <value>Gedrag</value>
   </data>
@@ -122,138 +317,6 @@
   <data name="Settings.Enabled" xml:space="preserve">
     <value>Geaktiveer</value>
   </data>
-  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
-    <value>Vlieg agtergrond ondeurdisdigheid</value>
-  </data>
-  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>Vlieg uit verstek posisie (vir Align knoppie)</value>
-  </data>
-  <data name="Settings.FlyoutTopBar" xml:space="preserve">
-    <value>Vlieg uit TopBar</value>
-  </data>
-  <data name="Settings.Modules" xml:space="preserve">
-    <value>Modules</value>
-  </data>
-  <data name="Settings.Modules.Airplane" xml:space="preserve">
-    <value>VliegtuigMode-vlieg module</value>
-  </data>
-  <data name="Settings.Modules.Audio" xml:space="preserve">
-    <value>Oudio-vlieguitmodule</value>
-  </data>
-  <data name="Settings.Modules.Brightness" xml:space="preserve">
-    <value>Helderheid-vlieguitmodule</value>
-  </data>
-  <data name="Settings.Modules.LockKeys" xml:space="preserve">
-    <value>LockKeys-vlieguitmodule</value>
-  </data>
-  <data name="Settings.RunAtStartup" xml:space="preserve">
-    <value>Laat loop by begin</value>
-  </data>
-  <data name="SettingsItem" xml:space="preserve">
-    <value>Instellings</value>
-  </data>
-  <data name="SettingsItemDescription" xml:space="preserve">
-    <value>Maak instellingsvenster oop</value>
-  </data>
-  <data name="UnpinTopBar" xml:space="preserve">
-    <value>Ontspet boonste bar</value>
-  </data>
-  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
-    <value>ModernFlyouts</value>
-  </data>
-  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
-    <value>Geen</value>
-  </data>
-  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
-    <value>Windows-verstek</value>
-  </data>
-  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
-    <value>Horisontale</value>
-  </data>
-  <data name="Enums.Orientation.Vertical" xml:space="preserve">
-    <value>Vertikaal</value>
-  </data>
-  <data name="About.AppDescription" xml:space="preserve">
-    <value>Hierdie inligting is ontwerp om 'n moderne Vlot Ontwerp vervanging vir die ou metro tema flyouts teenwoordig in Windows sedert Windows wees sedert Windows 8.</value>
-  </data>
-  <data name="About.Contributors" xml:space="preserve">
-    <value>Medewerkers</value>
-  </data>
-  <data name="About.GitHub" xml:space="preserve">
-    <value>Hierdie artikel is 'n weesbladsy.</value>
-  </data>
-  <data name="About.OpenNewIssue" xml:space="preserve">
-    <value>Maak 'n nuwe kwessie oop</value>
-  </data>
-  <data name="About.RateAndReview" xml:space="preserve">
-    <value>Tarief en resensie op Microsoft-Winkel</value>
-  </data>
-  <data name="About.Version" xml:space="preserve">
-    <value>Weergawe: </value>
-  </data>
-  <data name="Settings.Language" xml:space="preserve">
-    <value>Taal</value>
-  </data>
-  <data name="Settings.LanguageDescription" xml:space="preserve">
-    <value>Herlaai asseblief die program om die taal behoorlik te verander</value>
-  </data>
-  <data name="Settings.SystemDefault" xml:space="preserve">
-    <value>Stelselverstek</value>
-  </data>
-  <data name="About.Dependencies" xml:space="preserve">
-    <value>Afhanklikes</value>
-  </data>
-  <data name="About.FileABug" xml:space="preserve">
-    <value>As jy enige foute vind, maak asseblief 'n nuwe probleem in die repository oop.</value>
-  </data>
-  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
-    <value>Aantal sessies om te wys</value>
-  </data>
-  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
-    <value>Mediasessies paneel oriëntasie</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
-    <value>Wys Global System Media Vervoerkontroles (GSMTC) aka Media-kontroles in volumevliegout</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
-    <value>Wys volumebeheer in Global System Media Transport Controls (GSMTC)</value>
-  </data>
-  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
-    <value>Posseëlprendige belyning</value>
-  </data>
-  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
-    <value>Donker</value>
-  </data>
-  <data name="Enums.ElementTheme.Light" xml:space="preserve">
-    <value>Lig</value>
-  </data>
-  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
-    <value>Outoverskuil</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
-    <value>Ingevou</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
-    <value>Sigbaar</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
-    <value>Hoofletters</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
-    <value>Voeg in</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
-    <value>Num slot</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
-    <value>Rol slot</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
-    <value>Kies die sleutels waarna jy die vlieguitleg wil wys</value>
-  </data>
-  <data name="Settings.Appearance" xml:space="preserve">
-    <value>Voorkoms</value>
-  </data>
   <data name="Settings.EnableModule.Airplane" xml:space="preserve">
     <value>Aktiveer vliegtuigmodus Vliegout</value>
   </data>
@@ -266,14 +329,38 @@
   <data name="Settings.EnableModule.LockKeys" xml:space="preserve">
     <value>Aktiveer slotsleutels vliegout</value>
   </data>
+  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
+    <value>Vlieg agtergrond ondeurdisdigheid</value>
+  </data>
+  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
+    <value>Vlieg uit verstek posisie (vir Align knoppie)</value>
+  </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>Vlieënde tema</value>
   </data>
   <data name="Settings.FlyoutTimeout" xml:space="preserve">
     <value>Vlieg uit tydstip (me)</value>
   </data>
+  <data name="Settings.FlyoutTopBar" xml:space="preserve">
+    <value>Vlieg uit TopBar</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="Settings.LanguageDescription" xml:space="preserve">
+    <value>Herlaai asseblief die program om die taal behoorlik te verander</value>
+  </data>
   <data name="Settings.Left" xml:space="preserve">
     <value>Links</value>
+  </data>
+  <data name="Settings.Modules" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="Settings.Modules.Airplane" xml:space="preserve">
+    <value>VliegtuigMode-vlieg module</value>
+  </data>
+  <data name="Settings.Modules.Audio" xml:space="preserve">
+    <value>Oudio-vlieguitmodule</value>
   </data>
   <data name="Settings.Modules.Audio.Media" xml:space="preserve">
     <value>Media</value>
@@ -281,14 +368,11 @@
   <data name="Settings.Modules.Audio.Volume" xml:space="preserve">
     <value>Volume</value>
   </data>
-  <data name="Settings.Right" xml:space="preserve">
-    <value>Regs</value>
+  <data name="Settings.Modules.Brightness" xml:space="preserve">
+    <value>Helderheid-vlieguitmodule</value>
   </data>
-  <data name="Settings.TopBarVisibility" xml:space="preserve">
-    <value>Topbar sigbaarheid</value>
-  </data>
-  <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>Wys ikoon op stelsellaaiarea</value>
+  <data name="Settings.Modules.LockKeys" xml:space="preserve">
+    <value>LockKeys-vlieguitmodule</value>
   </data>
   <data name="Settings.Off" xml:space="preserve">
     <value>Af</value>
@@ -296,14 +380,35 @@
   <data name="Settings.On" xml:space="preserve">
     <value>Aan</value>
   </data>
-  <data name="Settings.AppTheme" xml:space="preserve">
-    <value>Programtema</value>
+  <data name="Settings.ResetToDefaults" xml:space="preserve">
+    <value>Stel alle instellings terug na verstek</value>
+  </data>
+  <data name="Settings.Right" xml:space="preserve">
+    <value>Regs</value>
+  </data>
+  <data name="Settings.RunAtStartup" xml:space="preserve">
+    <value>Laat loop by begin</value>
+  </data>
+  <data name="Settings.SystemDefault" xml:space="preserve">
+    <value>Stelselverstek</value>
+  </data>
+  <data name="Settings.TopBarVisibility" xml:space="preserve">
+    <value>Topbar sigbaarheid</value>
+  </data>
+  <data name="Settings.TrayIconEnabled" xml:space="preserve">
+    <value>Wys ikoon op stelsellaaiarea</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>Gebruik gekleurde skinkbordikoon</value>
   </data>
-  <data name="Settings.ResetToDefaults" xml:space="preserve">
-    <value>Stel alle instellings terug na verstek</value>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>Instellings</value>
+  </data>
+  <data name="SettingsItemDescription" xml:space="preserve">
+    <value>Maak instellingsvenster oop</value>
+  </data>
+  <data name="UnpinTopBar" xml:space="preserve">
+    <value>Ontspet boonste bar</value>
   </data>
   <data name="Settings.Personalization" xml:space="preserve">
     <value>Verpersoonliking</value>

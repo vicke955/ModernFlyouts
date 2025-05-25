@@ -13,34 +13,36 @@
     <controls:ScrollViewerEx VerticalScrollBarVisibility="Auto">
         <StackPanel Margin="20,10">
             <GroupBox>
-                <ui:ToggleSwitch Header="{x:Static resx:Strings.Settings_EnableModule_Audio}"
+                <ui:ToggleSwitch Header=""
                                  IsOn="{Binding AudioFlyoutHelper.IsEnabled}"
-                                 OnContent="{x:Static resx:Strings.Settings_On}"
-                                 OffContent="{x:Static resx:Strings.Settings_Off}" />
+                                 OnContent="{x:Static resx:Strings.Settings_EnableModule_Audio}"
+                                 OffContent="{x:Static resx:Strings.Settings_EnableModule_Audio}" />
             </GroupBox>
 
             <TabControl IsEnabled="{Binding AudioFlyoutHelper.IsEnabled, Mode=OneWay}"
                         Margin="-10,0" Style="{DynamicResource TabControlPivotStyle}">
                 <TabItem Header="{x:Static resx:Strings.GeneralSettings}">
-                    <ui:SimpleStackPanel Margin="10" Spacing="10">
-                        <ui:ToggleSwitch Header="{x:Static resx:Strings.AudioFlyoutHelper_ShowGSMTCInVolumeFlyout}"
+                    <ui:SimpleStackPanel Margin="-2,0" Spacing="10">
+                        <ui:ToggleSwitch Header=""
                                          IsOn="{Binding AudioFlyoutHelper.ShowGSMTCInVolumeFlyout}"
-                                         OnContent="{x:Static resx:Strings.Settings_On}"
-                                         OffContent="{x:Static resx:Strings.Settings_Off}" />
-                        <ui:ToggleSwitch Header="{x:Static resx:Strings.AudioFlyoutHelper_ShowVolumeControlInGSMTCFlyout}"
+                                         OnContent="{x:Static resx:Strings.AudioFlyoutHelper_ShowGSMTCInVolumeFlyout}"
+                                         OffContent="{x:Static resx:Strings.AudioFlyoutHelper_ShowGSMTCInVolumeFlyout}" />
+                        <ui:ToggleSwitch Header=""
                                          IsOn="{Binding AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout}"
-                                         OnContent="{x:Static resx:Strings.Settings_On}"
-                                         OffContent="{x:Static resx:Strings.Settings_Off}" />
+                                         OnContent="{x:Static resx:Strings.AudioFlyoutHelper_ShowVolumeControlInGSMTCFlyout}"
+                                         OffContent="{x:Static resx:Strings.AudioFlyoutHelper_ShowVolumeControlInGSMTCFlyout}" />
                     </ui:SimpleStackPanel>
                 </TabItem>
                 <TabItem Header="{x:Static resx:Strings.Settings_Modules_Audio_Media}">
-                    <ui:SimpleStackPanel Margin="10" Spacing="10">
-                        <ui:ToggleSwitch Header="{x:Static resx:Strings.AudioFlyoutHelper_ThumbnailAlignment}"
-                                         OnContent="{x:Static resx:Strings.Settings_Right}" OffContent="{x:Static resx:Strings.Settings_Left}"
-                                         IsOn="{Binding UIManager.AlignGSMTCThumbnailToRight}" />
-                        <ui:ToggleSwitch Header="{x:Static resx:Strings.AudioFlyoutHelper_UseThumbnailAsBackground}"
-                                         OnContent="{x:Static resx:Strings.Settings_On}" OffContent="{x:Static resx:Strings.Settings_Off}"
+                    <ui:SimpleStackPanel Margin="-2,0" Spacing="10">
+                        <ui:ToggleSwitch Header=""
+                                         OnContent="{x:Static resx:Strings.AudioFlyoutHelper_UseThumbnailAsBackground}" 
+                                         OffContent="{x:Static resx:Strings.AudioFlyoutHelper_UseThumbnailAsBackground}"
                                          IsOn="{Binding UIManager.UseGSMTCThumbnailAsBackground}" />
+                        <ui:ToggleSwitch Header="{x:Static resx:Strings.AudioFlyoutHelper_ThumbnailAlignment}"
+                                         OnContent="{x:Static resx:Strings.Settings_Right}" 
+                                         OffContent="{x:Static resx:Strings.Settings_Left}"
+                                         IsOn="{Binding UIManager.AlignGSMTCThumbnailToRight}" />
                         <ui:RadioButtons x:Name="orientationCmbBox" x:FieldModifier="private"
                                          Header="{x:Static resx:Strings.AudioFlyoutHelper_SessionsPanelOrientation}"
                                          ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"

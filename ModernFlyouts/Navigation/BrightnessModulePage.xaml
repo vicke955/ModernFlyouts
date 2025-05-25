@@ -15,10 +15,10 @@
     <controls:ScrollViewerEx VerticalScrollBarVisibility="Auto">
         <StackPanel Margin="20,10">
             <GroupBox>
-                <ui:ToggleSwitch Header="{x:Static resx:Strings.Settings_EnableModule_Brightness}"
+                <ui:ToggleSwitch Header=""
                                  IsOn="{Binding BrightnessFlyoutHelper.IsEnabled}"
-                                 OnContent="{x:Static resx:Strings.Settings_On}"
-                                 OffContent="{x:Static resx:Strings.Settings_Off}" />
+                                 OnContent="{x:Static resx:Strings.Settings_EnableModule_Brightness}"
+                                 OffContent="{x:Static resx:Strings.Settings_EnableModule_Brightness}" />
             </GroupBox>
 
             <ItemsControl ItemsSource="{Binding Source={x:Static display:BrightnessManager.Instance}, Path=BrightnessControllers}"
@@ -48,7 +48,7 @@
                                            Text="{Binding AssociatedDisplayMonitor.DisplayName}" />
                             </ui:SimpleStackPanel>
                             <Grid Grid.Row="1">
-                                <ui:FontIcon x:Name="BrightnessGlyph" Grid.Column="0" FontSize="16">
+                                <ui:FontIcon x:Name="BrightnessGlyph" Grid.Column="0" FontSize="25">
                                     <ui:FontIcon.Glyph>
                                         <Binding Path="Brightness">
                                             <Binding.Converter>

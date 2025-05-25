@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -15,6 +120,30 @@
   <data name="About" xml:space="preserve">
     <value>Σχετικά με την εφαρμογή</value>
   </data>
+  <data name="About.AppDescription" xml:space="preserve">
+    <value>Αυτή η εφαρμογή έχει σχεδιαστεί για να είναι μια σύγχρονη αντικατάσταση Fluent Design για το παλιό θέμα flyouts που υπάρχει στα Windows από τα Windows 8.</value>
+  </data>
+  <data name="About.Contributors" xml:space="preserve">
+    <value>Συντελεστές</value>
+  </data>
+  <data name="About.Dependencies" xml:space="preserve">
+    <value>Απαιτούμενες Εφαρμογές</value>
+  </data>
+  <data name="About.FileABug" xml:space="preserve">
+    <value>Εάν βρείτε σφάλματα, ανοίξτε μία νέα αναφορά προβλήματος στο αποθετήριο GitHub.</value>
+  </data>
+  <data name="About.GitHub" xml:space="preserve">
+    <value>Αποθετήριο GitHub</value>
+  </data>
+  <data name="About.OpenNewIssue" xml:space="preserve">
+    <value>Άνοιγμα νέας αναφοράς προβλήματος</value>
+  </data>
+  <data name="About.RateAndReview" xml:space="preserve">
+    <value>Αξιολόγηση στο Microsoft Store</value>
+  </data>
+  <data name="About.Version" xml:space="preserve">
+    <value>Έκδοση: </value>
+  </data>
   <data name="AirplaneMode.NotAvailable" xml:space="preserve">
     <value>Η λειτουργία πτήσης δεν είναι διαθέσιμη :(</value>
   </data>
@@ -27,11 +156,56 @@
   <data name="Align" xml:space="preserve">
     <value>Στοίχιση στην προεπιλεγμένη θέση</value>
   </data>
+  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
+    <value>Αριθμός περιόδων λειτουργίας που θα εμφανίζονται</value>
+  </data>
   <data name="AudioFlyoutHelper.NoDevices" xml:space="preserve">
     <value>Δεν υπάρχουν συνδεδεμένες συσκευές ήχου</value>
   </data>
+  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
+    <value>Προσανατολισμός πίνακα περιόδων λειτουργίας πολυμέσων</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
+    <value>Εμφάνιση του Global System Media Transport Controls (GSMTC) γνωστό και ως έλεγχος πολυμέσων στο αναδυόμενο στοιχείο έντασης ήχου</value>
+  </data>
+  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
+    <value>Εμφάνιση ελέγχου έντασης ήχου στο Global System Media Transport Controls (GSMTC) γνωστό και ως αναδυόμενο στοιχείο πολυμέσων</value>
+  </data>
+  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
+    <value>Στοίχιση μικρογραφιών</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Κλείσιμο</value>
+  </data>
+  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
+    <value>ModernFlyouts</value>
+  </data>
+  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
+    <value>Κανένα</value>
+  </data>
+  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
+    <value>Προεπιλογή των Windows</value>
+  </data>
+  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
+    <value>Σκουρόχρωμο</value>
+  </data>
+  <data name="Enums.ElementTheme.Light" xml:space="preserve">
+    <value>Ανοιχτόχρωμο</value>
+  </data>
+  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
+    <value>Οριζόντια</value>
+  </data>
+  <data name="Enums.Orientation.Vertical" xml:space="preserve">
+    <value>Κατακόρυφα</value>
+  </data>
+  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
+    <value>Αυτόματη απόκρυψη</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
+    <value>Συμπτυγμένο</value>
+  </data>
+  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
+    <value>Ορατό</value>
   </data>
   <data name="ExitItem" xml:space="preserve">
     <value>Έξοδος</value>
@@ -41,6 +215,12 @@
   </data>
   <data name="GeneralSettings" xml:space="preserve">
     <value>Γενικά</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
+    <value>Caps Lock</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
+    <value>Insert</value>
   </data>
   <data name="LockKeysFlyoutHelper.InsertMode" xml:space="preserve">
     <value>Λειτουργία εισαγωγής</value>
@@ -53,8 +233,17 @@
     <value>{0} είναι ενεργοποιημένο</value>
     <comment>E.g. Caps lock is on</comment>
   </data>
+  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
+    <value>Num Lock</value>
+  </data>
   <data name="LockKeysFlyoutHelper.OvertypeMode" xml:space="preserve">
     <value>Λειτουργία αντικατάστασης κειμένου</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
+    <value>Scroll Lock (Κλείδωμα κύλισης)</value>
+  </data>
+  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
+    <value>Επιλέξτε τα πλήκτρα για τα οποία θέλετε να εμφανίζεται το αναδυόμενο στοιχείο</value>
   </data>
   <data name="PinTopBar" xml:space="preserve">
     <value>Καρφίτσωμα άνω γραμμής</value>
@@ -104,6 +293,12 @@
   <data name="Settings.Additional" xml:space="preserve">
     <value>Πρόσθετα</value>
   </data>
+  <data name="Settings.Appearance" xml:space="preserve">
+    <value>Εμφάνιση</value>
+  </data>
+  <data name="Settings.AppTheme" xml:space="preserve">
+    <value>Θέμα εφαρμογής</value>
+  </data>
   <data name="Settings.Behavior" xml:space="preserve">
     <value>Συμπεριφορά</value>
   </data>
@@ -122,138 +317,6 @@
   <data name="Settings.Enabled" xml:space="preserve">
     <value>Ενεργοποιημένο</value>
   </data>
-  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
-    <value>Αδιαφάνεια φόντου αναδυόμενου στοιχείου</value>
-  </data>
-  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>Προεπιλεγμένη θέση αναδυόμενου στοιχείου (για το κουμπί "Στοίχιση")</value>
-  </data>
-  <data name="Settings.FlyoutTopBar" xml:space="preserve">
-    <value>Άνω γραμμή αναδυόμενων στοιχείων</value>
-  </data>
-  <data name="Settings.Modules" xml:space="preserve">
-    <value>Μονάδες αναδυόμενων στοιχείων</value>
-  </data>
-  <data name="Settings.Modules.Airplane" xml:space="preserve">
-    <value>Λειτουργίας πτήσης</value>
-  </data>
-  <data name="Settings.Modules.Audio" xml:space="preserve">
-    <value>Ήχος</value>
-  </data>
-  <data name="Settings.Modules.Brightness" xml:space="preserve">
-    <value>Φωτεινότητα</value>
-  </data>
-  <data name="Settings.Modules.LockKeys" xml:space="preserve">
-    <value>Κλείδωμα πλήκτρων</value>
-  </data>
-  <data name="Settings.RunAtStartup" xml:space="preserve">
-    <value>Εκτέλεση κατά την εκκίνηση</value>
-  </data>
-  <data name="SettingsItem" xml:space="preserve">
-    <value>Ρυθμίσεις</value>
-  </data>
-  <data name="SettingsItemDescription" xml:space="preserve">
-    <value>Άνοιγμα παραθύρου ρυθμίσεων</value>
-  </data>
-  <data name="UnpinTopBar" xml:space="preserve">
-    <value>Ξεκαρφίτσωμα άνω γραμμής</value>
-  </data>
-  <data name="Enums.DefaultFlyout.ModernFlyouts" xml:space="preserve">
-    <value>ModernFlyouts</value>
-  </data>
-  <data name="Enums.DefaultFlyout.None" xml:space="preserve">
-    <value>Κανένα</value>
-  </data>
-  <data name="Enums.DefaultFlyout.WindowsDefault" xml:space="preserve">
-    <value>Προεπιλογή των Windows</value>
-  </data>
-  <data name="Enums.Orientation.Horizontal" xml:space="preserve">
-    <value>Οριζόντια</value>
-  </data>
-  <data name="Enums.Orientation.Vertical" xml:space="preserve">
-    <value>Κατακόρυφα</value>
-  </data>
-  <data name="About.AppDescription" xml:space="preserve">
-    <value>Αυτή η εφαρμογή έχει σχεδιαστεί για να είναι μια σύγχρονη αντικατάσταση Fluent Design για το παλιό θέμα flyouts που υπάρχει στα Windows από τα Windows 8.</value>
-  </data>
-  <data name="About.Contributors" xml:space="preserve">
-    <value>Συντελεστές</value>
-  </data>
-  <data name="About.GitHub" xml:space="preserve">
-    <value>Αποθετήριο GitHub</value>
-  </data>
-  <data name="About.OpenNewIssue" xml:space="preserve">
-    <value>Άνοιγμα νέας αναφοράς προβλήματος</value>
-  </data>
-  <data name="About.RateAndReview" xml:space="preserve">
-    <value>Αξιολόγηση στο Microsoft Store</value>
-  </data>
-  <data name="About.Version" xml:space="preserve">
-    <value>Έκδοση: </value>
-  </data>
-  <data name="Settings.Language" xml:space="preserve">
-    <value>Γλώσσα</value>
-  </data>
-  <data name="Settings.LanguageDescription" xml:space="preserve">
-    <value>Επανεκκινήστε την εφαρμογή για να αλλάξετε σωστά τη γλώσσα</value>
-  </data>
-  <data name="Settings.SystemDefault" xml:space="preserve">
-    <value>Προεπιλογή συστήματος</value>
-  </data>
-  <data name="About.Dependencies" xml:space="preserve">
-    <value>Απαιτούμενες Εφαρμογές</value>
-  </data>
-  <data name="About.FileABug" xml:space="preserve">
-    <value>Εάν βρείτε σφάλματα, ανοίξτε μία νέα αναφορά προβλήματος στο αποθετήριο GitHub.</value>
-  </data>
-  <data name="AudioFlyoutHelper.MaxVerticalSessionControlsCount" xml:space="preserve">
-    <value>Αριθμός περιόδων λειτουργίας που θα εμφανίζονται</value>
-  </data>
-  <data name="AudioFlyoutHelper.SessionsPanelOrientation" xml:space="preserve">
-    <value>Προσανατολισμός πίνακα περιόδων λειτουργίας πολυμέσων</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowGSMTCInVolumeFlyout" xml:space="preserve">
-    <value>Εμφάνιση του Global System Media Transport Controls (GSMTC) γνωστό και ως έλεγχος πολυμέσων στο αναδυόμενο στοιχείο έντασης ήχου</value>
-  </data>
-  <data name="AudioFlyoutHelper.ShowVolumeControlInGSMTCFlyout" xml:space="preserve">
-    <value>Εμφάνιση ελέγχου έντασης ήχου στο Global System Media Transport Controls (GSMTC) γνωστό και ως αναδυόμενο στοιχείο πολυμέσων</value>
-  </data>
-  <data name="AudioFlyoutHelper.ThumbnailAlignment" xml:space="preserve">
-    <value>Στοίχιση μικρογραφιών</value>
-  </data>
-  <data name="Enums.ElementTheme.Dark" xml:space="preserve">
-    <value>Σκουρόχρωμο</value>
-  </data>
-  <data name="Enums.ElementTheme.Light" xml:space="preserve">
-    <value>Ανοιχτόχρωμο</value>
-  </data>
-  <data name="Enums.TopBarVisibility.AutoHide" xml:space="preserve">
-    <value>Αυτόματη απόκρυψη</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Collapsed" xml:space="preserve">
-    <value>Συμπτυγμένο</value>
-  </data>
-  <data name="Enums.TopBarVisibility.Visible" xml:space="preserve">
-    <value>Ορατό</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.CapsLock" xml:space="preserve">
-    <value>Caps Lock</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.Insert" xml:space="preserve">
-    <value>Insert</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.NumLock" xml:space="preserve">
-    <value>Num Lock</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.ScrollLock" xml:space="preserve">
-    <value>Scroll Lock (Κλείδωμα κύλισης)</value>
-  </data>
-  <data name="LockKeysFlyoutHelper.SelectKeyDescription" xml:space="preserve">
-    <value>Επιλέξτε τα πλήκτρα για τα οποία θέλετε να εμφανίζεται το αναδυόμενο στοιχείο</value>
-  </data>
-  <data name="Settings.Appearance" xml:space="preserve">
-    <value>Εμφάνιση</value>
-  </data>
   <data name="Settings.EnableModule.Airplane" xml:space="preserve">
     <value>Ενεργοποίηση αναδυόμενου στοιχείου λειτουργίας πτήσης</value>
   </data>
@@ -266,14 +329,38 @@
   <data name="Settings.EnableModule.LockKeys" xml:space="preserve">
     <value>Αναδυόμενο στοιχείο ενεργοποίησης πλήκτρων κλειδώματος</value>
   </data>
+  <data name="Settings.FlyoutBackgroundOpacity" xml:space="preserve">
+    <value>Αδιαφάνεια φόντου αναδυόμενου στοιχείου</value>
+  </data>
+  <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
+    <value>Προεπιλεγμένη θέση αναδυόμενου στοιχείου (για το κουμπί "Στοίχιση")</value>
+  </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>Θέμα αναδυόμενου στοιχείου</value>
   </data>
   <data name="Settings.FlyoutTimeout" xml:space="preserve">
     <value>Χρονικό όριο αναδυόμενου στοιχείου (ms)</value>
   </data>
+  <data name="Settings.FlyoutTopBar" xml:space="preserve">
+    <value>Άνω γραμμή αναδυόμενων στοιχείων</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Γλώσσα</value>
+  </data>
+  <data name="Settings.LanguageDescription" xml:space="preserve">
+    <value>Επανεκκινήστε την εφαρμογή για να αλλάξετε σωστά τη γλώσσα</value>
+  </data>
   <data name="Settings.Left" xml:space="preserve">
     <value>Αριστερά</value>
+  </data>
+  <data name="Settings.Modules" xml:space="preserve">
+    <value>Μονάδες αναδυόμενων στοιχείων</value>
+  </data>
+  <data name="Settings.Modules.Airplane" xml:space="preserve">
+    <value>Λειτουργίας πτήσης</value>
+  </data>
+  <data name="Settings.Modules.Audio" xml:space="preserve">
+    <value>Ήχος</value>
   </data>
   <data name="Settings.Modules.Audio.Media" xml:space="preserve">
     <value>Πολυμέσα</value>
@@ -281,14 +368,11 @@
   <data name="Settings.Modules.Audio.Volume" xml:space="preserve">
     <value>Ένταση</value>
   </data>
-  <data name="Settings.Right" xml:space="preserve">
-    <value>Δεξιά</value>
+  <data name="Settings.Modules.Brightness" xml:space="preserve">
+    <value>Φωτεινότητα</value>
   </data>
-  <data name="Settings.TopBarVisibility" xml:space="preserve">
-    <value>Εμφάνιση άνω γραμμής</value>
-  </data>
-  <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>Εμφάνιση εικονιδίου στην περιοχή των εικονιδίων συστήματος</value>
+  <data name="Settings.Modules.LockKeys" xml:space="preserve">
+    <value>Κλείδωμα πλήκτρων</value>
   </data>
   <data name="Settings.Off" xml:space="preserve">
     <value>Ανενεργό</value>
@@ -296,14 +380,35 @@
   <data name="Settings.On" xml:space="preserve">
     <value>Ενεργό</value>
   </data>
-  <data name="Settings.AppTheme" xml:space="preserve">
-    <value>Θέμα εφαρμογής</value>
+  <data name="Settings.ResetToDefaults" xml:space="preserve">
+    <value>Επαναφορά όλων των ρυθμίσεων στις προεπιλογές</value>
+  </data>
+  <data name="Settings.Right" xml:space="preserve">
+    <value>Δεξιά</value>
+  </data>
+  <data name="Settings.RunAtStartup" xml:space="preserve">
+    <value>Εκτέλεση κατά την εκκίνηση</value>
+  </data>
+  <data name="Settings.SystemDefault" xml:space="preserve">
+    <value>Προεπιλογή συστήματος</value>
+  </data>
+  <data name="Settings.TopBarVisibility" xml:space="preserve">
+    <value>Εμφάνιση άνω γραμμής</value>
+  </data>
+  <data name="Settings.TrayIconEnabled" xml:space="preserve">
+    <value>Εμφάνιση εικονιδίου στην περιοχή των εικονιδίων συστήματος</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>Χρήση έγχρωμου εικονιδίου συστήματος</value>
   </data>
-  <data name="Settings.ResetToDefaults" xml:space="preserve">
-    <value>Επαναφορά όλων των ρυθμίσεων στις προεπιλογές</value>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>Ρυθμίσεις</value>
+  </data>
+  <data name="SettingsItemDescription" xml:space="preserve">
+    <value>Άνοιγμα παραθύρου ρυθμίσεων</value>
+  </data>
+  <data name="UnpinTopBar" xml:space="preserve">
+    <value>Ξεκαρφίτσωμα άνω γραμμής</value>
   </data>
   <data name="Settings.Personalization" xml:space="preserve">
     <value>Εξατομίκευση</value>
