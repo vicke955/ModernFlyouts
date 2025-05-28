@@ -50,6 +50,8 @@ namespace ModernFlyouts.UI
                 {
                     SystemTheme.SystemThemeChanged -= OnSystemThemeChanged;
                     ModernFlyouts.Core.Display.DisplayManager.Instance.DisplayUpdated -= OnDisplayUpdated;
+
+                    TrayIconManager.RemoveTrayIcon();
                 }
                 _disposed = true;
             }

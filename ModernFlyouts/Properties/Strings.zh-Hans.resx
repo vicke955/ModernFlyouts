@@ -396,7 +396,7 @@
     <value>顶栏可见性</value>
   </data>
   <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>在系统托盘显示图标</value>
+    <value>显示系统托盘图标</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>使用彩色托盘图标</value>

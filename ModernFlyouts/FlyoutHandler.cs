@@ -458,6 +458,8 @@ namespace ModernFlyouts
                         RelaunchHelper.RestartFlags.RESTART_NO_HANG |
                         RelaunchHelper.RestartFlags.RESTART_NO_REBOOT);
 
+                    UI.TrayIconManager.RemoveTrayIcon();
+                    
                     AppLifecycleManager.PrepareToDie();
                     return IntPtr.Zero;
                 });
@@ -531,6 +533,8 @@ namespace ModernFlyouts
             {
                 Instance.UIManager.Dispose();
             }
+
+            UI.TrayIconManager.RemoveTrayIcon();
             
             NativeFlyoutHandler.Instance.ShowNativeFlyout();
             Environment.Exit(0);

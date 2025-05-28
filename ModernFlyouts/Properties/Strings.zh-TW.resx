@@ -396,7 +396,7 @@
     <value>頂部列可見性</value>
   </data>
   <data name="Settings.TrayIconEnabled" xml:space="preserve">
-    <value>在系統工作列顯示圖示</value>
+    <value>顯示系統工作列圖示</value>
   </data>
   <data name="Settings.UseColoredTrayIcon" xml:space="preserve">
     <value>使用著色工作列圖示</value>

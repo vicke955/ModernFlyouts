@@ -13,6 +13,8 @@ namespace ModernFlyouts
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
+            UI.TrayIconManager.RemoveTrayIcon();
+                    
             FlyoutHandler.Instance = new FlyoutHandler();
             FlyoutHandler.Instance.Initialize();
         }
