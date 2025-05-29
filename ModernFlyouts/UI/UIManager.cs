@@ -5,6 +5,7 @@ using ModernFlyouts.Helpers;
 using ModernWpf;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -382,9 +383,13 @@ namespace ModernFlyouts.UI
             ModernFlyouts.Core.Display.DisplayManager.Instance.DisplayUpdated += OnDisplayUpdated;
         }
 
-        private void OnDisplayUpdated(object sender, EventArgs e)
+        private async void OnDisplayUpdated(object sender, EventArgs e)
         {
             TrayIconManager.RemoveTrayIcon();
+            
+            // 添加延迟
+            await Task.Delay(200);
+            
             TrayIconManager.UpdateTrayIconVisibility(trayIconEnabled);
         }
 
