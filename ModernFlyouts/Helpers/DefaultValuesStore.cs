@@ -22,7 +22,7 @@ namespace ModernFlyouts.Helpers
 
         public const DefaultFlyout PreferredDefaultFlyout = DefaultFlyout.ModernFlyouts;
 
-        public static BindablePoint DefaultFlyoutPosition => new(50, 60);
+        public static BindablePoint DefaultFlyoutPosition => new(60, 60);
 
         #endregion
 
@@ -83,6 +83,8 @@ namespace ModernFlyouts.Helpers
         public const bool UseColoredTrayIcon = true;
 
         public const bool FlyoutAnimationEnabled = true;
+
+        public const bool UseFlyoutBorder = true;
 
         public const bool AlignGSMTCThumbnailToRight = true;
 

@@ -192,6 +192,20 @@ namespace ModernFlyouts.UI
             }
         }
 
+        private bool useFlyoutBorder = DefaultValuesStore.UseFlyoutBorder;
+
+        public bool UseFlyoutBorder
+        {
+            get => useFlyoutBorder;
+            set
+            {
+                if (SetProperty(ref useFlyoutBorder, value))
+                {
+                    OnUseFlyoutBorderChanged();
+                }
+            }
+        }
+
         #endregion
 
         #region Layout
@@ -373,6 +387,7 @@ namespace ModernFlyouts.UI
             TrayIconEnabled = AppDataHelper.TrayIconEnabled;
             UseColoredTrayIcon = AppDataHelper.UseColoredTrayIcon;
             FlyoutAnimationEnabled = AppDataHelper.FlyoutAnimationEnabled;
+            UseFlyoutBorder = AppDataHelper.UseFlyoutBorder;
 
             FlyoutTheme = AppDataHelper.FlyoutTheme;
             AppTheme = AppDataHelper.AppTheme;
@@ -414,6 +429,11 @@ namespace ModernFlyouts.UI
         private void OnFadeAnimationEnabledChanged()
         {
             AppDataHelper.FlyoutAnimationEnabled = flyoutAnimationEnabled;
+        }
+
+        private void OnUseFlyoutBorderChanged()
+        {
+            AppDataHelper.UseFlyoutBorder = useFlyoutBorder;
         }
 
         private void OnSystemThemeChanged(object sender, SystemThemeChangedEventArgs args)

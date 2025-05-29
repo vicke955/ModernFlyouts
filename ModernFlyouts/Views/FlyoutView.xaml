@@ -47,16 +47,13 @@
                         <controls:CrossFadeContentControl Content="{Binding PrimaryContent}" />
                     </StackPanel>
                     <Border
-                        BorderThickness="{DynamicResource FlyoutBorderThemeThickness}"
+                        BorderThickness="{Binding Source={x:Static local:FlyoutHandler.Instance}, 
+                        Path=UIManager.UseFlyoutBorder, 
+                        Converter={StaticResource BooleanToThicknessConverter}, 
+                        ConverterParameter={StaticResource FlyoutBorderThemeThickness}}"
                         BorderBrush="{DynamicResource FlyoutBorderThemeBrush}"
                         CornerRadius="{DynamicResource FlyoutCornerRadius}" />
                 </Grid>
-                <!--<Border Background="{DynamicResource FlyoutBackground}"
-                    BorderThickness="{DynamicResource FlyoutBorderThemeThickness}"
-                    BorderBrush="{DynamicResource FlyoutBorderThemeBrush}"
-                    CornerRadius="{DynamicResource FlyoutCornerRadius}">
-                    
-                </Border>-->
             </ui:ThemeShadowChrome>
             <ui:ThemeShadowChrome Depth="{x:Static localui:UIManager.FlyoutShadowDepth}"
                 CornerRadius="{DynamicResource FlyoutCornerRadius}"
@@ -67,7 +64,10 @@
                             CornerRadius="{DynamicResource FlyoutCornerRadius}"/>
                     <controls:CrossFadeContentControl Content="{Binding SecondaryContent}" />
                     <Border
-                        BorderThickness="{DynamicResource FlyoutBorderThemeThickness}"
+                        BorderThickness="{Binding Source={x:Static local:FlyoutHandler.Instance}, 
+                        Path=UIManager.UseFlyoutBorder, 
+                        Converter={StaticResource BooleanToThicknessConverter}, 
+                        ConverterParameter={StaticResource FlyoutBorderThemeThickness}}"
                         BorderBrush="{DynamicResource FlyoutBorderThemeBrush}"
                         CornerRadius="{DynamicResource FlyoutCornerRadius}" />
                 </Grid>

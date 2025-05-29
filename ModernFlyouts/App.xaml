@@ -38,6 +38,7 @@
             <converters:EnumToLocalizedStringConverter x:Key="EnumToLocalizedStringConverter" />
             <converters:InvertBooleanToVisibilityConverter x:Key="InvertBooleanToVisibilityConverter" />
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <converters:BooleanToThicknessConverter x:Key="BooleanToThicknessConverter" />
 
             <converters:PlayPauseButtonTooltipConverter x:Key="PlayPauseButtonTooltipConverter" />
             <converters:RepeatButtonTooltipConverter x:Key="RepeatButtonTooltipConverter" />

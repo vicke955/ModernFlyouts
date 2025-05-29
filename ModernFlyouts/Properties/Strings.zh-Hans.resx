@@ -351,7 +351,7 @@
     <value>请重新启动应用程序，以便完整更改语言</value>
   </data>
   <data name="Settings.Left" xml:space="preserve">
-    <value>左侧</value>
+    <value>靠左</value>
   </data>
   <data name="Settings.Modules" xml:space="preserve">
     <value>浮出控件模块</value>
@@ -404,6 +404,9 @@
   <data name="Settings.FlyoutAnimationEnabled" xml:space="preserve">
     <value>淡出动画</value>
   </data>
+  <data name="Settings_UseFlyoutBorder" xml:space="preserve">
+    <value>显示浮出控件边框</value>
+  </data>
   <data name="SettingsItem" xml:space="preserve">
     <value>设置</value>
   </data>
@@ -435,7 +438,7 @@
     <value>靠右</value>
   </data>
   <data name="Enums.FlyoutWindowAlignments.Top" xml:space="preserve">
-    <value>上</value>
+    <value>顶部</value>
   </data>
   <data name="Enums.FlyoutWindowExpandDirection.Auto" xml:space="preserve">
     <value>自动</value>
@@ -453,7 +456,7 @@
     <value>向上</value>
   </data>
   <data name="Enums.FlyoutWindowPlacementMode.Auto" xml:space="preserve">
-    <value>自动</value>
+    <value>快速</value>
   </data>
   <data name="Enums.FlyoutWindowPlacementMode.Manual" xml:space="preserve">
     <value>手动</value>
