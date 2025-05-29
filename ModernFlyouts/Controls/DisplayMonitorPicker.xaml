@@ -60,7 +60,7 @@
                                     <TextBlock Text="{Binding DisplayName}" />
                                 </ui:SimpleStackPanel>
                             </Button.ToolTip>
-                            <Border x:Name="border" BorderThickness="2" BorderBrush="{DynamicResource SystemControlBackgroundBaseHighBrush}"
+                            <Border x:Name="border" BorderThickness="1" BorderBrush="{DynamicResource SystemControlBackgroundBaseHighBrush}"
                                     CornerRadius="{DynamicResource ControlCornerRadius}">
                                 <Grid>
                                     <TextBlock Style="{DynamicResource BodyTextBlockStyle}"

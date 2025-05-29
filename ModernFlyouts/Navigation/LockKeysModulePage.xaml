@@ -20,7 +20,7 @@
 
             <GroupBox IsEnabled="{Binding LockKeysFlyoutHelper.IsEnabled, Mode=OneWay}"
                       Header="{x:Static resx:Strings.LockKeysFlyoutHelper_SelectKeyDescription}">
-                <ui:SimpleStackPanel Spacing="10">
+                <ui:SimpleStackPanel Spacing="10" Orientation="Horizontal">
                     <CheckBox Content="{x:Static resx:Strings.LockKeysFlyoutHelper_CapsLock}" IsChecked="{Binding LockKeysFlyoutHelper.CapsLockEnabled}" />
                     <CheckBox Content="{x:Static resx:Strings.LockKeysFlyoutHelper_NumLock}" IsChecked="{Binding LockKeysFlyoutHelper.NumLockEnabled}" />
                     <CheckBox Content="{x:Static resx:Strings.LockKeysFlyoutHelper_ScrollLock}" IsChecked="{Binding LockKeysFlyoutHelper.ScrollLockEnabled}" />

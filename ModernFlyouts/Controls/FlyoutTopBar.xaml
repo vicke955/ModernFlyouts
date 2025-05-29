@@ -47,7 +47,7 @@
                     ui:ControlHelper.CornerRadius="{DynamicResource ControlCornerRadius}"
                     Command="{x:Static utils:CommonCommands.AlignOnScreenFlyoutToDefaultPosition}"
                     ToolTip="{x:Static resx:Strings.Align}">
-                <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Align}" FontSize="14" />
+                <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Align}" FontSize="15" />
             </Button>
         </Grid>
 

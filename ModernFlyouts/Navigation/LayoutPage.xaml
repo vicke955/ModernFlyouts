@@ -79,7 +79,8 @@
                         Width="140"
                         ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                         ItemsSource="{toolkit:EnumValues Type=coreui:FlyoutWindowExpandDirection}"
-                        SelectedItem="{Binding UIManager.OnScreenFlyoutWindowExpandDirection}"/>
+                        SelectedItem="{Binding UIManager.OnScreenFlyoutWindowExpandDirection}"
+                        BorderThickness="0.8"/>
                     <ui:RadioButtons
                         ui:ControlHelper.Header="{x:Static resx:Strings.Settings_FlyoutContentStackingDirection}"
                         ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
