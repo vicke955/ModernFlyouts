@@ -1,0 +1,14 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="http://schemas.modernwpf.com/2019">
+
+    <!-- 横向排列的RadioButtons样式 -->
+    <Style x:Key="HorizontalRadioButtonsStyle" TargetType="ui:RadioButtons">
+        <Setter Property="MaxColumns" Value="5" />
+        <Setter Property="MinWidth" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Margin" Value="0,0,0,0" />
+    </Style>
+    
+</ResourceDictionary> 

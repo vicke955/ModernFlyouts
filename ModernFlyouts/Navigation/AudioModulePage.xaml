@@ -45,10 +45,11 @@
                                          IsOn="{Binding UIManager.AlignGSMTCThumbnailToRight}" />
                         <ui:RadioButtons x:Name="orientationCmbBox" x:FieldModifier="private"
                                          Header="{x:Static resx:Strings.AudioFlyoutHelper_SessionsPanelOrientation}"
+                                         Style="{StaticResource HorizontalRadioButtonsStyle}"
                                          ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                                          ItemsSource="{toolkit:EnumValues Type=Orientation}"
                                          SelectedItem="{Binding UIManager.SessionsPanelOrientation}" />
-                        <ui:NumberBox Header="{x:Static resx:Strings.AudioFlyoutHelper_MaxVerticalSessionControlsCount}" MinWidth="240"
+                        <ui:NumberBox Header="{x:Static resx:Strings.AudioFlyoutHelper_MaxVerticalSessionControlsCount}" MinWidth="170"
                                       HorizontalAlignment="Left" Minimum="1" Maximum="10" SmallChange="1" LargeChange="2"
                                       SpinButtonPlacementMode="Inline" Value="{Binding UIManager.MaxVerticalSessionControlsCount}"
                                       Visibility="{Binding ElementName=orientationCmbBox, Path=SelectedIndex,

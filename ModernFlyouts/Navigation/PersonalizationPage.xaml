@@ -18,14 +18,17 @@
             <GroupBox Header="{x:Static resx:Strings.Settings_Appearance}">
                 <ui:SimpleStackPanel Spacing="10">
                     <ui:RadioButtons Header="{x:Static resx:Strings.Settings_FlyoutTheme}"
+                                     Style="{StaticResource HorizontalRadioButtonsStyle}"
                                      ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                                      ItemsSource="{toolkit:EnumValues Type=ui:ElementTheme}"
                                      SelectedItem="{Binding UIManager.FlyoutTheme}" />
                     <ui:RadioButtons Header="{x:Static resx:Strings.Settings_AppTheme}"
+                                     Style="{StaticResource HorizontalRadioButtonsStyle}"
                                      ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                                      ItemsSource="{toolkit:EnumValues Type=ui:ElementTheme}"
                                      SelectedItem="{Binding UIManager.AppTheme}" />
                     <ui:RadioButtons Header="{x:Static resx:Strings.Settings_TopBarVisibility}"
+                                     Style="{StaticResource HorizontalRadioButtonsStyle}"
                                      ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                                      ItemsSource="{toolkit:EnumValues Type=localui:TopBarVisibility}"
                                      SelectedItem="{Binding UIManager.TopBarVisibility}" />
@@ -49,7 +52,9 @@
                                          IsOn="{Binding UIManager.UseColoredTrayIcon}"
                                          OnContent="{x:Static resx:Strings.Settings_UseColoredTrayIcon}"
                                          OffContent="{x:Static resx:Strings.Settings_UseColoredTrayIcon}"
-                                         IsEnabled="{Binding UIManager.TrayIconEnabled}" />
+                                         Visibility="{Binding UIManager.TrayIconEnabled,
+                                            Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                                         <!--IsEnabled="{Binding UIManager.TrayIconEnabled}" />-->
                         </ui:SimpleStackPanel>
                         <ui:ToggleSwitch Header=""
                                      IsOn="{Binding UIManager.UseFlyoutBorder}"
@@ -64,22 +69,22 @@
             </GroupBox>
 
             <GroupBox Header="{x:Static resx:Strings.Settings_Behavior}">
-                <ui:SimpleStackPanel Spacing="10">
+                <ui:SimpleStackPanel Spacing="10" Orientation="Horizontal">
                     <ui:NumberBox Header="{x:Static resx:Strings.Settings_FlyoutTimeout}"
                                   HorizontalAlignment="Left" Minimum="100"
                                   SmallChange="50" LargeChange="100" MinWidth="170"
                                   SpinButtonPlacementMode="Inline" Value="{Binding UIManager.FlyoutTimeout}">
-                        <ui:NumberBox.Description>
-                            <ui:SimpleStackPanel Margin="0,5,0,0" Orientation="Horizontal" Spacing="5">
-                                <TextBlock Text="{x:Static helpers:DefaultValuesStore.RecommendedFlyoutTimeout}" Margin="11,0,0,0"/>
-                                <Viewbox Height="12" Margin="0,0,0,3">
-                                    <Border>
-                                        <ui:SymbolIcon Symbol="SolidStar" />
-                                    </Border>
-                                </Viewbox>
-                            </ui:SimpleStackPanel>
-                        </ui:NumberBox.Description>
                     </ui:NumberBox>
+                    <Grid   Margin="0,0,0,38">
+                        <ui:SimpleStackPanel Orientation="Horizontal" Spacing="3" Opacity="0.3">
+                            <Viewbox Height="12" Margin="0,0,0,3">
+                                <Border>
+                                    <ui:SymbolIcon Symbol="SolidStar" />
+                                </Border>
+                            </Viewbox>
+                            <TextBlock Text="{x:Static helpers:DefaultValuesStore.RecommendedFlyoutTimeout}" />
+                        </ui:SimpleStackPanel>
+                    </Grid>
                 </ui:SimpleStackPanel>
             </GroupBox>
         </StackPanel>

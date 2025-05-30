@@ -30,6 +30,7 @@
                 <ui:XamlControlsResources />
                 <ResourceDictionary Source="Styles/Button.xaml" />
                 <ResourceDictionary Source="Styles/ToggleButton.xaml" />
+                <ResourceDictionary Source="Styles/RadioButtons.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <converters:IndexToVisibilityConverter x:Key="IndexToVisibilityConverter" />
