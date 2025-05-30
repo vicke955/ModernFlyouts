@@ -435,7 +435,7 @@
     <value>左侧</value>
   </data>
   <data name="Enums.FlyoutWindowAlignments.Right" xml:space="preserve">
-    <value>靠右</value>
+    <value>右侧</value>
   </data>
   <data name="Enums.FlyoutWindowAlignments.Top" xml:space="preserve">
     <value>顶部</value>
@@ -450,7 +450,7 @@
     <value>左侧</value>
   </data>
   <data name="Enums.FlyoutWindowExpandDirection.Right" xml:space="preserve">
-    <value>靠右</value>
+    <value>右侧</value>
   </data>
   <data name="Enums.FlyoutWindowExpandDirection.Up" xml:space="preserve">
     <value>向上</value>
