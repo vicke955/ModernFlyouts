@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.Helpers;
+using ModernFlyouts.AppLifecycle;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 

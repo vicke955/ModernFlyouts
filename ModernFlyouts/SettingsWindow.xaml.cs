@@ -73,7 +73,8 @@ namespace ModernFlyouts
             ("audio_module", typeof(AudioModulePage)),
             ("brightness_module", typeof(BrightnessModulePage)),
             ("airplane_mode_module", typeof(AirplaneModeModulePage)),
-            ("lock_keys_module", typeof(LockKeysModulePage))
+            ("lock_keys_module", typeof(LockKeysModulePage)),
+            ("exit", typeof(ExitPage))
         };
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -137,5 +138,10 @@ namespace ModernFlyouts
         }
 
         #endregion
+
+        private void ExitAppButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Utilities.CommonCommands.ExitAppCommand.Execute(null);
+        }
     }
 }

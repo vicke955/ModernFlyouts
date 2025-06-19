@@ -419,6 +419,9 @@
   <data name="Settings.RestartRequired" xml:space="preserve">
     <value>Bazı değişiklikleri uygulamak için uygulamayı yeniden başlatmanız gerekiyor</value>
   </data>
+  <data name="RestartApp" xml:space="preserve">
+    <value>Restart App</value>
+  </data>
   <data name="Enums.FlyoutWindowAlignments.Bottom" xml:space="preserve">
     <value>Alt</value>
   </data>
@@ -493,5 +496,11 @@
   </data>
   <data name="AudioFlyoutHelper.UseThumbnailAsBackground" xml:space="preserve">
     <value>Medya küçük resmini medya denetiminin arka planı olarak kullan</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit app</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Check</value>
   </data>
 </root>

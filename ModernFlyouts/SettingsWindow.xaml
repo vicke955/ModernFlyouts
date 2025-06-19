@@ -8,7 +8,7 @@
         xmlns:media="clr-namespace:ModernFlyouts.UI.Fluent.Media"
         xmlns:utils="clr-namespace:ModernFlyouts.Utilities"
         xmlns:resx="clr-namespace:ModernFlyouts.Properties"
-        mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800" Height="700" Width="900"
+        mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800" Height="620" Width="820"
         ui:WindowHelper.UseModernWindowStyle="True" ui:TitleBar.ExtendViewIntoTitleBar="True"
         media:RevealBrushHelper.TrackThisElement="True"
         Title="{x:Static resx:Strings.SettingsItem}" MinWidth="350" Icon="Assets\Logo.ico">
@@ -61,6 +61,11 @@
                     <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Info}" />
                 </ui:NavigationViewItem.Icon>
             </ui:NavigationViewItem>
+            <ui:NavigationViewItem Content="{x:Static resx:Strings.Exit}" Tag="exit">
+                <ui:NavigationViewItem.Icon>
+                    <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Exit}" />
+                </ui:NavigationViewItem.Icon>
+            </ui:NavigationViewItem>
         </ui:NavigationView.FooterMenuItems>
         <Grid>
             <Grid.RowDefinitions>
@@ -73,17 +78,26 @@
                            Margin="12,45,0,11" Style="{DynamicResource TitleTextBlockStyle}" />
             </Grid>
             <ui:Frame x:Name="ContentFrame" Grid.Row="1" IsTabStop="True" />
-            <Grid Grid.Row="2" Height="48"
+            <Grid Grid.Row="2" Height="48" 
                   Background="{DynamicResource NavigationViewExpandedPaneBackground}"
                   Visibility="{Binding Source={x:Static local:FlyoutHandler.Instance},
-                      Path=UIManager.RestartRequired, Converter={StaticResource BooleanToVisibilityConverter}}">
+                  Path=UIManager.RestartRequired, Converter={StaticResource BooleanToVisibilityConverter}}">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="48" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Info}"
-                             VerticalAlignment="Center" HorizontalAlignment="Center" />
-                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{x:Static resx:Strings.Settings_RestartRequired}" />
+                <ui:SimpleStackPanel Orientation="Horizontal">
+                    <ui:SimpleStackPanel Orientation="Horizontal">
+                        <ui:FontIcon Glyph="{x:Static utils:CommonGlyphs.Info}"
+                             VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0" FontSize="15"/>
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" 
+                                   Text="{x:Static resx:Strings.Settings_RestartRequired}" />
+                    </ui:SimpleStackPanel>
+                    <Button
+                        Background="{DynamicResource NavigationViewExpandedPaneBackground}"
+                        VerticalAlignment="Center" HorizontalAlignment="Right" Margin="15,0,15,1" 
+                        FontWeight="Black"
+                        Content="{x:Static resx:Strings.Exit}" Click="ExitAppButton_Click" />
+                </ui:SimpleStackPanel>
             </Grid>
         </Grid>
     </ui:NavigationView>

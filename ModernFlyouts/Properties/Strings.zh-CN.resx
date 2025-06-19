@@ -333,7 +333,7 @@
     <value>浮出控件背景不透明度</value>
   </data>
   <data name="Settings.FlyoutDefaultPosition" xml:space="preserve">
-    <value>浮出控件默认位置（用于恢复默认位置按钮）</value>
+    <value>设置浮出控件位置</value>
   </data>
   <data name="Settings.FlyoutTheme" xml:space="preserve">
     <value>浮出控件主题</value>
@@ -425,6 +425,9 @@
   <data name="Settings.RestartRequired" xml:space="preserve">
     <value>重新启动以应用某些更改</value>
   </data>
+  <data name="RestartApp" xml:space="preserve">
+    <value>重启</value>
+  </data>
   <data name="Enums.FlyoutWindowAlignments.Bottom" xml:space="preserve">
     <value>底部</value>
   </data>
@@ -499,5 +502,11 @@
   </data>
   <data name="AudioFlyoutHelper.UseThumbnailAsBackground" xml:space="preserve">
     <value>使用媒体的缩略图作为控件的背景</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出应用</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>确认</value>
   </data>
 </root>

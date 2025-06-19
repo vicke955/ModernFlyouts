@@ -22,9 +22,10 @@
         </Grid.RowDefinitions>
         <!--<TextBlock Text="{x:Static resx:Strings.Settings_FlyoutAlignment}" Margin="0,0,0,10"/>-->
         <Border Padding="5" BorderBrush="{DynamicResource SystemControlHighlightAccentBrush}"
+                
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
-                BorderThickness="0.8" CornerRadius="{DynamicResource ControlCornerRadius}"
+                BorderThickness="0" CornerRadius="{DynamicResource ControlCornerRadius}"
                 MinWidth="280" MinHeight="112.33">
             <toolkitControls:SimpleWrapPanel
             Grid.Row="1" HorizontalSpacing="10" VerticalSpacing="10" Orientation="Horizontal" >
@@ -57,21 +58,21 @@
                 </Grid>
             <Grid>
                 <ui:SimpleStackPanel Spacing="5" Orientation="Vertical"  Margin="10,15,0,0">
-                    <ui:SimpleStackPanel Spacing="5" Orientation="Horizontal">
-                        <TextBlock Text="{x:Static resx:Strings.Settings_HorizontalAlignment}" VerticalAlignment="Center"/>
+                    <ui:SimpleStackPanel Spacing="0" Orientation="Horizontal"  HorizontalAlignment="Right">
+                            <TextBlock Text="{x:Static resx:Strings.Settings_HorizontalAlignment}" VerticalAlignment="Center" />
                         <ComboBox x:Name="CmbHorizontal" x:FieldModifier="private"
                           ui:ControlHelper.Header=""
                           ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                           Width="75" 
-                          BorderThickness="0.8"/>
+                          BorderThickness="0"/>
                     </ui:SimpleStackPanel>
-                    <ui:SimpleStackPanel Spacing="5" Orientation="Horizontal">
-                        <TextBlock Text="{x:Static resx:Strings.Settings_VerticalAlignment}" VerticalAlignment="Center"/>
+                    <ui:SimpleStackPanel Spacing="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <TextBlock Text="{x:Static resx:Strings.Settings_VerticalAlignment}" VerticalAlignment="Center" />
                         <ComboBox x:Name="CmbVertical" x:FieldModifier="private"
                           ui:ControlHelper.Header=""
                           ItemTemplate="{StaticResource LocalizedEnumItemTemplate}"
                           Width="75" 
-                          BorderThickness="0.8" />
+                          BorderThickness="0" />
                     </ui:SimpleStackPanel>
                 </ui:SimpleStackPanel>
             </Grid>

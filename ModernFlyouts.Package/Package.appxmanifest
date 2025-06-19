@@ -9,9 +9,9 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="32669SamG.ModernFlyouts"
+    Name="1009Vicke.ModernFlyouts"
     Publisher="CN=vicke"
-    Version="0.10.8622.0" />
+    Version="1.10.2.0" />
 
   <Properties>
     <DisplayName>ms-resource:Resources/PackageDisplayName</DisplayName>
